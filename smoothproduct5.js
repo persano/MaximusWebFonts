@@ -47,7 +47,7 @@
                         $(this).parents('.sp-wrap').find('.sp-thumbs').append('<a href="' + large + '" style="background-image:url(' + thumb + ')"'+classes+' ' + 'alt="' + alt + '" title="' + title + '"></a>');
 						$(this).remove();
 					});
-                    $('.sp-large', this).append('<a href="' + firstLarge + '" class="sp-current-big"><img src="' + firstThumb + '" alt="' + alt + '" title="' + title + '" /></a>');
+					$('.sp-large', this).append('<a href="' + firstLarge + '" class="sp-current-big"><img src="' + firstThumb + '" alt="' + alt + '" title="' + title + '" /></a>');
 					$('.sp-wrap').css('display', 'inline-block');
 				// If only one image
 				} else {
@@ -99,6 +99,7 @@
                     var title = $(this).parent().find('.sp-current').attr('title');
 
                 $(this).parents('.sp-wrap').find('.sp-large').html('<a href="' + nextLarge + '" class="sp-current-big"><img src="' + nextThumb + '" alt="' + alt + '" title="' + title + '"/></a>');
+				console.log(nextThumb);
 				$(this).parents('.sp-wrap').find('.sp-large').hide().fadeIn(250, function() {
 
 					var autoHeight = $(this).parents('.sp-wrap').find('.sp-large img').height();
