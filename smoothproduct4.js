@@ -1,299 +1,274 @@
-!(function (s) {
-    s.fn.extend({
-      deleteSmoothProducts: function () {
-        s(document.body).off("click", ".sp-lightbox"),
-          s(document.body).off("click", "#sp-prev"),
-          s(document.body).off("click", "#sp-next"),
-          s(document.body).off("click", ".sp-large a"),
-          s(document.body).off("click", ".sp-noff-touch .sp-zoom"),
-          s(document.body).off("click", ".sp-tb-active a"),
-          s(document.body).off("click", ".sp-thumbs");
-      },
-      smoothproducts: function () {
-        function t() {
-          s(".sp-selected").removeClass("sp-selected"),
-            s(".sp-lightbox").fadeOut(function () {
-              s(this).remove();
-            });
-        }
-        function e(s) {
-          return s.match(/url\([\"\']{0,1}(.+)[\"\']{0,1}\)+/i)[1];
-        }
-        s(".sp-loading").hide(),
-          s(".sp-wrap").each(function () {
-            var t, e, p, a, u;
-            (jj = s("a img", this).attr("alt")),
-              (a = "alt='" + jj + "'"),
-              (jjj = s("a img", this).attr("title")),
-              (u = "title='" + jjj + "'"),
-              s(this).addClass("sp-touch"),
-              1 < s("a", this).length
-                ? ((p = !!s("a.sp-default", this)[0]),
-                  s(this).append(
-                    '<div class="sp-large"></div><div class="sp-thumbs sp-tb-active"></div>'
-                  ),
-                  s("a", this).each(function (a) {
-                    var n = s("img", this).attr("src"),
-                      i = s(this).attr("href"),
-                      r = "";
-                    ((0 === a && !p) || s(this).hasClass("sp-default")) &&
-                      ((r = ' class="sp-current"'),
-                      (t = i),
-                      (e = s("img", this)[0].src)),
-                      s(this)
-                        .parents(".sp-wrap")
-                        .find(".sp-thumbs")
-                        .append(
-                          '<a href="' +
-                            i +
-                            '" style="background-image:url(' +
-                            n +
-                            ')"' +
-                            r +
-                            "></a>"
-                        ),
-                      s(this).remove();
-                  }),
-                  s(".sp-large", this).append(
-                    '<a href="' +
-                      t +
-                      '" class="sp-current-big"><img src="' +
-                      e +
-                      '" ' +
-                      a + u +
-                      " /></a>"
-                  ))
-                : (s(this).append('<div class="sp-large"></div>'),
-                  s("a", this)
-                    .appendTo(s(".sp-large", this))
-                    .addClass(".sp-current-big")),
-              s(".sp-wrap").css("display", "inline-block");
-          }),
-          s(document.body).on("click", ".sp-thumbs", function (s) {
-            s.preventDefault();
-          }),
-          s(document.body).on("mouseover", function (t) {
-            s(".sp-wrap").removeClass("sp-touch").addClass("sp-non-touch"),
-              t.preventDefault();
-          }),
-          s(document.body).on("touchstart", function () {
-            s(".sp-wrap").removeClass("sp-non-touch").addClass("sp-touch");
-          }),
-          s(document.body).on("click", ".sp-tb-active a", function (t) {
-            var p = "alt='" + s(".sp-large a img").attr("alt") + "'";
-            var u = "title='" + s(".sp-large a img").attr("title") + "'";
-            t.preventDefault(),
-              s(this).parent().find(".sp-current").removeClass(),
-              s(this).addClass("sp-current"),
-              s(this)
-                .parents(".sp-wrap")
-                .find(".sp-thumbs")
-                .removeClass("sp-tb-active"),
-              s(this).parents(".sp-wrap").find(".sp-zoom").remove();
-            var a = s(this).parents(".sp-wrap").find(".sp-large").height(),
-              n = s(this).parents(".sp-wrap").find(".sp-large").width();
-            s(this)
-              .parents(".sp-wrap")
-              .find(".sp-large")
-              .css({ overflow: "hidden", height: a + "px", width: n + "px" }),
-              s(this)
-                .addClass("sp-current")
-                .parents(".sp-wrap")
-                .find(".sp-large a")
-                .remove();
-            var i = s(this).parent().find(".sp-current").attr("href"),
-              r = e(s(this).parent().find(".sp-current").css("backgroundImage"));
-            s(this)
-              .parents(".sp-wrap")
-              .find(".sp-large")
-              .html(
-                '<a href="' +
-                  i +
-                  '" class="sp-current-big"><img src="' +
-                  r +
-                  '" ' +
-                  p +
-                  "/></a>"
-              ),
-              s(this)
-                .parents(".sp-wrap")
-                .find(".sp-large")
-                .hide()
-                .fadeIn(250, function () {
-                  var t = s(this)
-                    .parents(".sp-wrap")
-                    .find(".sp-large img")
-                    .height();
-                  s(this)
-                    .parents(".sp-wrap")
-                    .find(".sp-large")
-                    .animate({ height: t }, "fast", function () {
-                      s(".sp-large").css({ height: "auto", width: "auto" });
-                    }),
-                    s(this)
-                      .parents(".sp-wrap")
-                      .find(".sp-thumbs")
-                      .addClass("sp-tb-active");
-                });
-          }),
-          s(document.body).on(
-            "mouseenter",
-            ".sp-non-touch .sp-large",
-            function (t) {
-              var e = s("a", this).attr("href");
-              s(this).append('<div class="sp-zoom"><img src="' + e + '"/></div>'),
-                s(this).find(".sp-zoom").fadeIn(250),
-                t.preventDefault();
-            }
-          ),
-          s(document.body).on(
-            "mouseleave",
-            ".sp-non-touch .sp-large",
-            function (t) {
-              s(this)
-                .find(".sp-zoom")
-                .fadeOut(250, function () {
-                  s(this).remove();
-                }),
-                t.preventDefault();
-            }
-          ),
-          s(document.body).on("click", ".sp-non-touch .sp-zoom", function (t) {
-            var e = s(this).html(),
-              p = s(this).parents(".sp-wrap").find(".sp-thumbs a").length,
-              a =
-                s(this)
-                  .parents(".sp-wrap")
-                  .find(".sp-thumbs .sp-current")
-                  .index() + 1;
-            s(this).parents(".sp-wrap").addClass("sp-selected"),
-              s("body").append(
-                "<div class='sp-lightbox' data-currenteq='" +
-                  a +
-                  "'>" +
-                  e +
-                  "</div>"
-              ),
-              1 < p &&
-                (s(".sp-lightbox").append(
-                  "<a href='#' id='sp-prev'></a><a href='#' id='sp-next'></a>"
-                ),
-                1 == a
-                  ? s("#sp-prev").css("opacity", ".1")
-                  : a == p && s("#sp-next").css("opacity", ".1")),
-              s(".sp-lightbox").fadeIn(),
-              t.preventDefault();
-          }),
-          s(document.body).on("click", ".sp-large a", function (t) {
-            var e = s(this).attr("href"),
-              p = s(this).parents(".sp-wrap").find(".sp-thumbs a").length,
-              a =
-                s(this)
-                  .parents(".sp-wrap")
-                  .find(".sp-thumbs .sp-current")
-                  .index() + 1;
-            s(this).parents(".sp-wrap").addClass("sp-selected"),
-              s("body").append(
-                '<div class="sp-lightbox" data-currenteq="' +
-                  a +
-                  '"><img src="' +
-                  e +
-                  '"/></div>'
-              ),
-              1 < p &&
-                (s(".sp-lightbox").append(
-                  "<a href='#' id='sp-prev'></a><a href='#' id='sp-next'></a>"
-                ),
-                1 == a
-                  ? s("#sp-prev").css("opacity", ".1")
-                  : a == p && s("#sp-next").css("opacity", ".1")),
-              s(".sp-lightbox").fadeIn(),
-              t.preventDefault();
-          }),
-          s(document.body).on("click", "#sp-next", function (t) {
-            t.stopPropagation();
-            var p,
-              a,
-              n,
-              i = s(".sp-lightbox").data("currenteq"),
-              r = s(".sp-selected .sp-thumbs a").length;
-            r <= i ||
-              ((p = i + 1),
-              (a = s(".sp-selected .sp-thumbs")
-                .find("a:eq(" + i + ")")
-                .attr("href")),
-              (n = e(
-                s(".sp-selected .sp-thumbs")
-                  .find("a:eq(" + i + ")")
-                  .css("backgroundImage")
-              )),
-              i == r - 1 && s("#sp-next").css("opacity", ".1"),
-              s("#sp-prev").css("opacity", "1"),
-              s(".sp-selected .sp-current").removeClass(),
-              s(".sp-selected .sp-thumbs a:eq(" + i + ")").addClass("sp-current"),
-              s(".sp-selected .sp-large")
-                .empty()
-                .append("<a href=" + a + '><img src="' + n + '"/></a>'),
-              s(".sp-lightbox img").fadeOut(250, function () {
-                s(this).remove(),
-                  s(".sp-lightbox")
-                    .data("currenteq", p)
-                    .append('<img src="' + a + '"/>'),
-                  s(".sp-lightbox img").hide().fadeIn(250);
-              })),
-              t.preventDefault();
-          }),
-          s(document.body).on("click", "#sp-prev", function (t) {
-            t.stopPropagation();
-            var p,
-              a,
-              n,
-              i = s(".sp-lightbox").data("currenteq");
-            (i -= 1) <= 0 ||
-              (1 == i && s("#sp-prev").css("opacity", ".1"),
-              (p = i - 1),
-              (a = s(".sp-selected .sp-thumbs")
-                .find("a:eq(" + p + ")")
-                .attr("href")),
-              (n = e(
-                s(".sp-selected .sp-thumbs")
-                  .find("a:eq(" + p + ")")
-                  .css("backgroundImage")
-              )),
-              s("#sp-next").css("opacity", "1"),
-              s(".sp-selected .sp-current").removeClass(),
-              s(".sp-selected .sp-thumbs a:eq(" + p + ")").addClass("sp-current"),
-              s(".sp-selected .sp-large")
-                .empty()
-                .append("<a href=" + a + '><img src="' + n + '"/></a>'),
-              s(".sp-lightbox img").fadeOut(250, function () {
-                s(this).remove(),
-                  s(".sp-lightbox")
-                    .data("currenteq", i)
-                    .append('<img src="' + a + '"/>'),
-                  s(".sp-lightbox img").hide().fadeIn(250);
-              })),
-              t.preventDefault();
-          }),
-          s(document.body).on("click", ".sp-lightbox", function () {
-            t();
-          }),
-          s(document).on("keydown", function (s) {
-            if (27 == s.keyCode) return t(), !1;
-          }),
-          s(".sp-large").on("mousemove", function (t) {
-            var e = s(this).width(),
-              p = s(this).height(),
-              a = s(this).offset(),
-              n = s(this).find(".sp-zoom").width(),
-              i = s(this).find(".sp-zoom").height(),
-              r = t.pageX - a.left,
-              o = t.pageY - a.top,
-              d = Math.floor((r * (e - n)) / e),
-              c = Math.floor((o * (p - i)) / p);
-            s(this).find(".sp-zoom").css({ left: d, top: c });
-          });
-      },
-    });
-  })(jQuery);
-  
+/*
+ * Smoothproducts version 2.0.2
+ * http://kthornbloom.com/smoothproducts.php
+ *
+ * Copyright 2013, Kevin Thornbloom
+ * Free to use and abuse under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ */
+
+(function($) {
+	$.fn.extend({
+		deleteSmoothProducts: function () {
+			$(document.body).off('click', '.sp-lightbox');
+			$(document.body).off('click', '#sp-prev');
+			$(document.body).off('click', '#sp-next');
+			$(document.body).off('click', '.sp-large a');
+			$(document.body).off('click', '.sp-noff-touch .sp-zoom');
+			$(document.body).off('click', '.sp-tb-active a');
+			$(document.body).off('click', '.sp-thumbs');
+		},
+		smoothproducts: function() {
+
+			// Add some markup & set some CSS
+
+			$('.sp-loading').hide();
+			$('.sp-wrap').each(function() {
+				$(this).addClass('sp-touch');
+				var thumbQty = $('a', this).length;
+
+				// If more than one image
+				if (thumbQty > 1) {
+					var firstLarge,firstThumb,
+						defaultImage = $('a.sp-default', this)[0]?true:false;
+					$(this).append('<div class="sp-large"></div><div class="sp-thumbs sp-tb-active"></div>');
+					$('a', this).each(function(index) {
+						var thumb = $('img', this).attr('src'),
+							large = $(this).attr('href'),
+							classes = '';
+						//set default image
+						if((index === 0 && !defaultImage) || $(this).hasClass('sp-default')){
+							classes = ' class="sp-current"';
+							firstLarge = large;
+							firstThumb = $('img', this)[0].src;
+						}
+						$(this).parents('.sp-wrap').find('.sp-thumbs').append('<a href="' + large + '" style="background-image:url(' + thumb + ')"'+classes+'></a>');
+						$(this).remove();
+					});
+					$('.sp-large', this).append('<a href="' + firstLarge + '" class="sp-current-big"><img src="' + firstThumb + '" alt="" /></a>');
+					$('.sp-wrap').css('display', 'inline-block');
+				// If only one image
+				} else {
+					$(this).append('<div class="sp-large"></div>');
+					$('a', this).appendTo($('.sp-large', this)).addClass('.sp-current-big');
+					$('.sp-wrap').css('display', 'inline-block');
+				}
+			});
+
+
+			// Prevent clicking while things are happening
+			$(document.body).on('click', '.sp-thumbs', function(event) {
+				event.preventDefault();
+			});
+
+
+			// Is this a touch screen or not?
+			$(document.body).on('mouseover', function(event) {
+				$('.sp-wrap').removeClass('sp-touch').addClass('sp-non-touch');
+				event.preventDefault();
+			});
+
+			$(document.body).on('touchstart', function() {
+				$('.sp-wrap').removeClass('sp-non-touch').addClass('sp-touch');
+			});
+
+			// Clicking a thumbnail
+			$(document.body).on('click', '.sp-tb-active a', function(event) {
+
+				event.preventDefault();
+				$(this).parent().find('.sp-current').removeClass();
+				$(this).addClass('sp-current');
+				$(this).parents('.sp-wrap').find('.sp-thumbs').removeClass('sp-tb-active');
+				$(this).parents('.sp-wrap').find('.sp-zoom').remove();
+
+				var currentHeight = $(this).parents('.sp-wrap').find('.sp-large').height(),
+					currentWidth = $(this).parents('.sp-wrap').find('.sp-large').width();
+				$(this).parents('.sp-wrap').find('.sp-large').css({
+					overflow: 'hidden',
+					height: currentHeight + 'px',
+					width: currentWidth + 'px'
+				});
+
+				$(this).addClass('sp-current').parents('.sp-wrap').find('.sp-large a').remove();
+
+				var nextLarge = $(this).parent().find('.sp-current').attr('href'),
+					nextThumb = get_url_from_background($(this).parent().find('.sp-current').css('backgroundImage'));
+
+				$(this).parents('.sp-wrap').find('.sp-large').html('<a href="' + nextLarge + '" class="sp-current-big"><img src="' + nextThumb + '"/></a>');
+				$(this).parents('.sp-wrap').find('.sp-large').hide().fadeIn(250, function() {
+
+					var autoHeight = $(this).parents('.sp-wrap').find('.sp-large img').height();
+
+					$(this).parents('.sp-wrap').find('.sp-large').animate({
+						height: autoHeight
+					}, 'fast', function() {
+						$('.sp-large').css({
+							height: 'auto',
+							width: 'auto'
+						});
+					});
+
+					$(this).parents('.sp-wrap').find('.sp-thumbs').addClass('sp-tb-active');
+				});
+			});
+
+			// Zoom In non-touch
+			$(document.body).on('mouseenter', '.sp-non-touch .sp-large', function(event) {
+				var largeUrl = $('a', this).attr('href');
+				$(this).append('<div class="sp-zoom"><img src="' + largeUrl + '"/></div>');
+				$(this).find('.sp-zoom').fadeIn(250);
+				event.preventDefault();
+			});
+
+			// Zoom Out non-touch
+			$(document.body).on('mouseleave', '.sp-non-touch .sp-large', function(event) {
+				$(this).find('.sp-zoom').fadeOut(250, function() {
+					$(this).remove();
+				});
+				event.preventDefault();
+			});
+
+			// Open in Lightbox non-touch
+			$(document.body).on('click', '.sp-non-touch .sp-zoom', function(event) {
+				var currentImg = $(this).html(),
+					thumbAmt = $(this).parents('.sp-wrap').find('.sp-thumbs a').length,
+					currentThumb = ($(this).parents('.sp-wrap').find('.sp-thumbs .sp-current').index())+1;
+				$(this).parents('.sp-wrap').addClass('sp-selected');
+				$('body').append("<div class='sp-lightbox' data-currenteq='"+currentThumb+"'>" + currentImg + "</div>");
+
+				if(thumbAmt > 1){
+					$('.sp-lightbox').append("<a href='#' id='sp-prev'></a><a href='#' id='sp-next'></a>");
+					if(currentThumb == 1) {
+						$('#sp-prev').css('opacity','.1');
+					} else if (currentThumb == thumbAmt){
+						$('#sp-next').css('opacity','.1');
+					}
+				}
+				$('.sp-lightbox').fadeIn();
+				event.preventDefault();
+			});
+
+			// Open in Lightbox touch
+			$(document.body).on('click', '.sp-large a', function(event) {
+				var currentImg = $(this).attr('href'),
+					thumbAmt = $(this).parents('.sp-wrap').find('.sp-thumbs a').length,
+					currentThumb = ($(this).parents('.sp-wrap').find('.sp-thumbs .sp-current').index())+1;
+
+				$(this).parents('.sp-wrap').addClass('sp-selected');
+				$('body').append('<div class="sp-lightbox" data-currenteq="'+currentThumb+'"><img src="' + currentImg + '"/></div>');
+
+				if(thumbAmt > 1){
+					$('.sp-lightbox').append("<a href='#' id='sp-prev'></a><a href='#' id='sp-next'></a>");
+					if(currentThumb == 1) {
+						$('#sp-prev').css('opacity','.1');
+					} else if (currentThumb == thumbAmt){
+						$('#sp-next').css('opacity','.1');
+					}
+				}
+				$('.sp-lightbox').fadeIn();
+				event.preventDefault();
+			});
+
+			// Pagination Forward
+			$(document.body).on('click', '#sp-next', function(event) {
+				event.stopPropagation();
+				var currentEq = $('.sp-lightbox').data('currenteq'),
+					totalItems = $('.sp-selected .sp-thumbs a').length;
+
+					if(currentEq >= totalItems) {
+					} else {
+						var nextEq = currentEq + 1,
+						newImg = $('.sp-selected .sp-thumbs').find('a:eq('+currentEq+')').attr('href'),
+						newThumb = get_url_from_background($('.sp-selected .sp-thumbs').find('a:eq('+currentEq+')').css('backgroundImage'));
+						if (currentEq == (totalItems - 1)) {
+							$('#sp-next').css('opacity','.1');
+						}
+						$('#sp-prev').css('opacity','1');
+						$('.sp-selected .sp-current').removeClass();
+						$('.sp-selected .sp-thumbs a:eq('+currentEq+')').addClass('sp-current');
+						$('.sp-selected .sp-large').empty().append('<a href='+newImg+'><img src="'+newThumb+'"/></a>');
+						$('.sp-lightbox img').fadeOut(250, function() {
+							$(this).remove();
+							$('.sp-lightbox').data('currenteq',nextEq).append('<img src="'+newImg+'"/>');
+							$('.sp-lightbox img').hide().fadeIn(250);
+						});
+					}
+
+				event.preventDefault();
+			});
+
+		// Pagination Backward
+			$(document.body).on('click', '#sp-prev', function(event) {
+
+				event.stopPropagation();
+				var currentEq = $('.sp-lightbox').data('currenteq'),
+					currentEq = currentEq - 1;
+					if(currentEq <= 0) {
+					} else {
+						if (currentEq == 1) {
+							$('#sp-prev').css('opacity','.1');
+						}
+						var nextEq = currentEq - 1,
+						newImg = $('.sp-selected .sp-thumbs').find('a:eq('+nextEq+')').attr('href'),
+						newThumb = get_url_from_background($('.sp-selected .sp-thumbs').find('a:eq('+nextEq+')').css('backgroundImage'));
+						$('#sp-next').css('opacity','1');
+						$('.sp-selected .sp-current').removeClass();
+						$('.sp-selected .sp-thumbs a:eq('+nextEq+')').addClass('sp-current');
+						$('.sp-selected .sp-large').empty().append('<a href='+newImg+'><img src="'+newThumb+'"/></a>');
+						$('.sp-lightbox img').fadeOut(250, function() {
+							$(this).remove();
+							$('.sp-lightbox').data('currenteq',currentEq).append('<img src="'+newImg+'"/>');
+							$('.sp-lightbox img').hide().fadeIn(250);
+						});
+					}
+				event.preventDefault();
+			});
+
+
+			// Close Lightbox
+			$(document.body).on('click', '.sp-lightbox', function() {
+				closeModal();
+			});
+
+			// Close on Esc
+			$(document).keydown(function(e) {
+				if (e.keyCode == 27) {
+					closeModal();
+					return false;
+				}
+			});
+
+			function closeModal (){
+				$('.sp-selected').removeClass('sp-selected');
+				$('.sp-lightbox').fadeOut(function() {
+						$(this).remove();
+				});
+			}
+
+
+			// Panning zoomed image (non-touch)
+
+			$('.sp-large').mousemove(function(e) {
+				var viewWidth = $(this).width(),
+					viewHeight = $(this).height(),
+					viewOffset = $(this).offset(),
+					largeWidth = $(this).find('.sp-zoom').width(),
+					largeHeight = $(this).find('.sp-zoom').height(),
+					relativeXPosition = (e.pageX - viewOffset.left),
+					relativeYPosition = (e.pageY - viewOffset.top),
+					moveX = Math.floor((relativeXPosition * (viewWidth - largeWidth) / viewWidth)),
+					moveY = Math.floor((relativeYPosition * (viewHeight - largeHeight) / viewHeight));
+
+				$(this).find('.sp-zoom').css({
+					left: moveX,
+					top: moveY
+				});
+
+			});
+
+			function get_url_from_background(bg){
+				return bg.match(/url\([\"\']{0,1}(.+)[\"\']{0,1}\)+/i)[1];
+			}
+		}
+	});
+})(jQuery);
