@@ -44,7 +44,7 @@
 							firstLarge = large;
 							firstThumb = $('img', this)[0].src;
 						}
-                        $(this).parents('.sp-wrap').find('.sp-thumbs').append('<a href="' + large + '" style="background-image:url(' + thumb + ')"'+classes+' ' + 'alt="' + alt + 'title="' + title + '"></a>');
+                        $(this).parents('.sp-wrap').find('.sp-thumbs').append('<a href="' + large + '" style="background-image:url(' + thumb + ')"'+classes+' ' + 'alt="' + alt + '" title="' + title + '"></a>');
 						$(this).remove();
 					});
                     $('.sp-large', this).append('<a href="' + firstLarge + '" class="sp-current-big"><img src="' + firstThumb + '" alt="' + alt + '" title="' + title + '" /></a>');
@@ -198,7 +198,7 @@
                         $('.sp-selected .sp-large').empty().append('<a href='+newImg+'><img src="'+newThumb+'" alt="' + alt  +'"  title="' + title + '"/></a>');
 						$('.sp-lightbox img').fadeOut(250, function() {
 							$(this).remove();
-                            $('.sp-lightbox').data('currenteq',nextEq).append('<img src="'+newImg+'" alt="' + alt  +'"  title="' + title + '"/>');
+                            $('.sp-lightbox').data('currenteq',nextEq).append('<img src="'+newImg+'" alt="' + alt + '" title="' + title + '"/>');
 							$('.sp-lightbox img').hide().fadeIn(250);
 						});
 					}
@@ -225,10 +225,10 @@
 						$('#sp-next').css('opacity','1');
 						$('.sp-selected .sp-current').removeClass();
 						$('.sp-selected .sp-thumbs a:eq('+nextEq+')').addClass('sp-current');
-                        $('.sp-selected .sp-large').empty().append('<a href='+newImg+'><img src="'+newThumb+'" alt="'+alt +'"  title="' + title + '"/></a>');
+                        $('.sp-selected .sp-large').empty().append('<a href='+newImg+'><img src="'+newThumb+'"  alt="' + alt +'" title="' + title + '"/></a>');
 						$('.sp-lightbox img').fadeOut(250, function() {
 							$(this).remove();
-							$('.sp-lightbox').data('currenteq',currentEq).append('<img src="'+newImg+'"  alt="' + alt +'"  title="' + title + '"/>');
+							$('.sp-lightbox').data('currenteq',currentEq).append('<img src="'+newImg+'"  alt="' + alt +'" title="' + title + '"/>');
 							$('.sp-lightbox img').hide().fadeIn(250);
 						});
 					}
