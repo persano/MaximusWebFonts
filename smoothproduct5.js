@@ -94,11 +94,12 @@
 				$(this).addClass('sp-current').parents('.sp-wrap').find('.sp-large a').remove();
 
 				var nextLarge = $(this).parent().find('.sp-current').attr('href'),
-					nextThumb = get_url_from_background($(this).parent().find('.sp-current').css('backgroundImage')).replace('"','');
+					nextThumb = get_url_from_background($(this).parent().find('.sp-current').css('backgroundImage'));
                     var alt = $(this).parent().find('.sp-current').attr('alt');
                     var title = $(this).parent().find('.sp-current').attr('title');
 
                 $(this).parents('.sp-wrap').find('.sp-large').html('<a href="' + nextLarge + '" class="sp-current-big"><img src="' + nextThumb + '" alt="' + alt + '" title="' + title + '"/></a>');
+				console.log(nextThumb);
 				$(this).parents('.sp-wrap').find('.sp-large').hide().fadeIn(250, function() {
 
 					var autoHeight = $(this).parents('.sp-wrap').find('.sp-large img').height();
