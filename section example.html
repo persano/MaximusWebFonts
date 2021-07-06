@@ -1,0 +1,32 @@
+<section id="novedades_preventa">
+<div class="container title-description-box preventa">
+<span>
+<h5 class="title-description">Black <strong>Julio</strong><a href="https://www.maximus.com.ar/ARTICULOS/Black-Julio/SCA_ID=-1/CAT_ID=-1/SCAT_ID=-1/m=-1/OR=2/wco=27/tv=Black%20Julio/maximus.aspx">Ver Todo</a></h5>
+</span>
+</div>
+<div class="container container-carrousel-preventa">
+<div class="row owl-carousel owl-theme" id="owlCarouselPreventa" v-if="preventaData">
+<div v-for="preventa in preventaData" class="col-md-prod" :id="preventa.item_id">
+<div class="product">
+<div class="image">
+<!--<img v-if="preventa.isEntregaInmediata" loading="lazy" src="https://raw.githubusercontent.com/persano/MaximusWebFonts/main/entregainmediata.svg" class="entregaInmediata" alt="Entrega Inmediata">-->
+<img loading="lazy" src="https://raw.githubusercontent.com/persano/MaximusWebFonts/main/ofertamaximusblack.svg" class="svgahora18" alt="Black Julio">
+<a :href="'{(GBP_URLBEGIN)}DETALLE/' + preventa.item_desc4link + '/ITEM_ID=' + preventa.item_id + '/{(GBP_URLEND)}' + '?PN=' + preventa.item_code4web + '?GTIN=' + preventa.item_vendorCode" target="_self">
+<img loading="lazy" :src="'{(GBP_ERPITEM)}' + preventa.item_code4web + '_600.jpg'" :alt="preventa.item_desc" class="img-responsive" onContextMenu="return false;" :title="preventa.item_desc">
+</a>
+</div>
+<div class="description">
+<h4><a :href="'{(GBP_URLBEGIN)}DETALLE/' + preventa.item_desc4link +'/ITEM_ID=' + preventa.item_id + '/{(GBP_URLEND)}' + '?PN=' + preventa.item_code4web + '?GTIN=' + preventa.item_vendorCode" target="_self" class="titprod" v-text="preventa.item_desc.toLowerCase().toTitleCase()">ITEMTIT</a></h4>
+</div>
+<div class="cajaprecio">
+<div class="price" v-html="'$' + preventa.prli_price.toString().split(',')[0] + '<small>' + preventa.prli_price.toString().split(',')[1] + '</small>'">$ PRICE1</div> 
+<div class="priceahora" style="color:#3a3a3a">18 cuotas de <span class="pricemulti" v-html="'$ ' + preventa.prli_price_18.toString().split(',')[0] + '<small>' + preventa.prli_price_18.toString().split(',')[1] + '</small>'"></span></div>
+<div class="vitrine-button">
+<a :href="'{(GBP_URLBEGIN)}DETALLE/' + preventa.item_desc4link + '/ITEM_ID=' + preventa.item_id + '/{(GBP_URLEND)}' + '?PN=' + preventa.item_code4web + '?GTIN=' + preventa.item_vendorCode" tabindex="0" :title="preventa.item_desc">Ver producto</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
