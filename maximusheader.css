@@ -1543,33 +1543,19 @@ ul{
         font-size: 2.5rem;
     }
 
-    .redes a i{
-        color: gray;
-        transition: ease-in-out 0.1s;
+    .redes a svg {
+      fill:gray;
+       color:gray !important;
+      transition:.1s ease-in-out;
+    width: 30px;
+      height:30px;
+     }
+    .fa-instagram1:hover {
+      fill: url(#my-cool-gradient) #447799 !important;
     }
 
     .fa-facebook:hover{
         color: rgb(54, 106, 237);
-    }
-  
-    .fa-instagram{
-  		color:#222 !important;
-	  	background-image: #222 !important;
-	          background-size: 100%;
-        -webkit-background-clip: text;
-        -moz-background-clip: text;
-        -webkit-text-fill-color: gray; 
-	  	transition: ease-out 0.3s;
-  	}
-    
-    .fa-instagram:hover{
-       background-color: gray;
-     	background-image: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
-        background-size: 100%;
-        -webkit-background-clip: text;
-        -moz-background-clip: text;
-        -webkit-text-fill-color: transparent; 
-        -moz-text-fill-color: transparent; 
     }
     
     .fa-youtube:hover{
