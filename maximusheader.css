@@ -1356,3 +1356,248 @@ button {
 	height: 24px !important;
 	margin-right: 5px !important;
   }
+footer{
+    min-width: 100% !important;
+    /*position: fixed;*/
+    bottom: 0;
+    background-color: #222;
+}
+  
+footer .container{
+	min-width: 100%;
+}  
+  
+
+a{
+    text-decoration:none;
+}
+
+ul{
+    list-style: none;
+    bottom: 0;
+}
+
+/* MOBILE */
+
+.secciones-footer{
+    width: 95%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    color: white;
+}
+
+.seccion{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.secc-cat, .secc-marcas, .secc-buscado, .secc-ayuda{
+    display: none;
+}
+  
+.secc-redes{
+	align-self:center;
+}
+
+.secc-redes h3{
+	color:white;  
+} 
+  
+.redes{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.redes a{
+    color: grey;
+    font-size: 2rem;
+}
+  
+.fa-instagram{
+  		background-color: #222;
+     	background-image: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+        background-size: 100%;
+  
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+
+        -webkit-text-fill-color: transparent;
+        -moz-text-fill-color: transparent;
+}
+  
+  
+.fa-facebook{
+    color: rgb(54, 106, 237);
+}
+  
+.fa-youtube{
+    color: rgb(227, 33, 33);
+}
+
+.secc-sistemas{
+    align-self: center;
+}
+
+.sistema{
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+/*
+.sistema .gbp{
+    width: 120px;
+    filter: saturate(110%) contrast(90%) brightness(135%) drop-shadow(0px 0px 1px #0000003b);
+}
+
+.logo-gbp{
+    width: 130px;
+}
+  */
+.logo-gbp img{
+    width: 120px;
+    filter: saturate(110%) contrast(90%) brightness(115%) drop-shadow(0px 0px 1px #0000003b);
+
+}
+
+.data-fiscal-a img{
+    width: 35px;
+  	margin-left: 20px;
+}
+
+
+/* TABLET */
+@media (min-width: 500px){
+    .secciones-footer{
+        flex-direction: row;
+        width: 85%;
+    }
+
+    .data-fiscal-a img{
+        width: 40px;
+    }
+
+    .logo-gbp{
+        transform: scale(1.5);
+        margin-right: 40px;
+        filter: saturate(110%) contrast(90%) brightness(135%) drop-shadow(0px 0px 1px #0000003b);
+    }
+}
+
+/* PCs */
+
+@media (min-width: 769px){
+
+    .secciones-footer{
+        width: 90%;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+  
+   .categorias{
+        text-align: left;
+	 	margin-left:0;
+	 	margin-top: 0;
+    }
+	
+  .sub-categorias{
+  		text-align:left;
+		margin:0 !important;
+  }
+
+    .secc-cat, .secc-marcas, .secc-buscado, .secc-ayuda{
+        display: flex;
+    }
+
+    .seccion h3{
+        margin-bottom: 10px;
+        color: var(--maximus-green);
+        text-align: left;
+    }
+
+    .seccion ul li {
+        color: white;
+        padding: 5px 0;
+    }
+
+    .seccion ul li a {
+        color: white;
+        transition: ease-in-out 0.1s;
+    }  
+    
+    .seccion ul li:hover a{
+        color: var(--maximus-green);
+    }
+  
+  	.secc-redes{
+		align-self:flex-start;
+	}
+
+    .redes a{
+        font-size: 2.5rem;
+    }
+
+    .redes a i{
+        color: gray;
+        transition: ease-in-out 0.1s;
+    }
+
+    .fa-facebook:hover{
+        color: rgb(54, 106, 237);
+    }
+  
+    .fa-instagram{
+  		color:#222 !important;
+	  	background-image: #222 !important;
+	          background-size: 100%;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: gray; 
+	  	transition: ease-out 0.3s;
+  	}
+    
+    .fa-instagram:hover{
+       background-color: gray;
+     	background-image: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+        background-size: 100%;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent; 
+        -moz-text-fill-color: transparent; 
+    }
+    
+    .fa-youtube:hover{
+        color: rgb(227, 33, 33);
+    }
+
+    .data-fiscal-a img{
+        width: 50px;
+    }
+    .logo-gbp{
+        transform: scale(1.6);
+	  	margin-right:20px        
+    }
+    .gbp{
+        filter: saturate(110%) contrast(90%) brightness(135%) drop-shadow(0px 0px 1px #0000003b);
+	  margin-right:20px   
+    }
+
+    .sec-sistemas{
+        align-self: flex-start;
+    }
+  
+  .sistema{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+}
