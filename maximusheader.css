@@ -1318,3 +1318,37 @@ button {
   z-index: 95;
   transition: ease-in-out 0.9s;
 }
+@media only screen and (max-width: 330px) {
+  .cuenta {
+    margin-right:.2rem;
+   }
+   .session-carrito .search-mobile-button {
+    margin-left: 4px;
+    margin-right: 4px;
+  }
+  .session-carrito .carrito {
+    margin-left: 4px;
+  }
+  }
+
+  .arrow-left {
+    transform: rotate(180deg);
+    margin-right: 0.5rem;
+    width: 20px;
+    height: 20px;
+}
+  .arrow-right {
+    width: 20px;
+    height: 20px;
+}
+  .cross {
+    width: 17px;
+	height: 17px;
+	cursor: pointer; 
+	margin-right: 5px;
+}
+  .cruz-menu-mobile{
+  	width: 24px !important;
+	height: 24px !important;
+	margin-right: 5px !important;
+  }
