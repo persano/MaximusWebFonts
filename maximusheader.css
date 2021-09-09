@@ -1555,11 +1555,11 @@ ul{
     }
 
     .fa-facebook:hover{
-        color: rgb(54, 106, 237);
+        fill: rgb(54, 106, 237);
     }
     
     .fa-youtube:hover{
-        color: rgb(227, 33, 33);
+        fill: rgb(227, 33, 33);
     }
 
     .data-fiscal-a img{
