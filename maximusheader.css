@@ -243,7 +243,7 @@ a {
   cursor: pointer !important;
 }
 
-.search-mobile .form {
+.search-mobile .form-header {
   width: 95% !important;
   display: flex !important;
   flex-direction: row !important;
@@ -252,7 +252,7 @@ a {
   margin: auto !important;
 }
 
-.search-mobile .form input {
+.search-mobile .form-header input {
   flex: 1 !important;
   width: 90% !important;
   height: 100%;
@@ -261,18 +261,18 @@ a {
   border-radius: 5px 0 0 5px !important;
   margin-bottom: 0px !important;
 }
-.search-mobile .form input {
+.search-mobile .form-header input {
   outline: none !important;
 }
 
-.search-mobile .form button {
+.search-mobile .form-header button {
   padding: 0.8rem !important;
   background-color: var(--maximus-green) !important;
   border: none !important;
   border-radius: 0 5px 5px 0 !important;
 }
 
-.search-mobile .form button i {
+.search-mobile .form-header button i {
   color: white !important;
   font-size: 18px !important;
 }
@@ -766,7 +766,7 @@ a {
     margin: auto;
   }
 
-  .search-web .form-web {
+  .search-web .form-web-header {
     width: 65%;
     margin: auto;
     padding: 5px 7px 5px 7px;
@@ -787,7 +787,7 @@ a {
     padding-left: 3px;
   }
 
-  .header-top .search-web .form-web input {
+  .header-top .search-web .form-web-header input {
     border: none !important;
     outline: none !important;
     height: 100%;
@@ -795,7 +795,7 @@ a {
     margin-bottom: 0 !important;
     color: #5f7d95;
   }
-  .header-top .search-web .form-web input::placeholder {
+  .header-top .search-web .form-web-header input::placeholder {
     color: rgba(95, 125, 149, 0.4);
   }
   .search-input-mobile {
@@ -805,7 +805,7 @@ a {
     color: rgba(95, 125, 149, 0.4);
   }
 
-  .header-top .search-web .form-web input:focus {
+  .header-top .search-web .form-web-header input:focus {
     outline: none;
   }
 
@@ -1243,7 +1243,7 @@ a {
 .hrblanco {
   background: #fff;
 }
-.search-mobile .form button.busquedamovil {
+.search-mobile .form-header button.busquedamovil {
   padding: 0.68em !important;
 }
 _:-webkit-any(x):-webkit-full-screen,
