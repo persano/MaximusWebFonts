@@ -1416,26 +1416,22 @@ ul{
     color: grey;
     font-size: 2rem;
 }
-  
+.redes a svg {
+  width: 30px;
+    height: 30px;
+      
+  }  
 .fa-instagram{
-  		background-color: #222;
-     	background-image: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
-        background-size: 100%;
-  
-        -webkit-background-clip: text;
-        -moz-background-clip: text;
-
-        -webkit-text-fill-color: transparent;
-        -moz-text-fill-color: transparent;
+  fill:url(#my-cool-gradient) #479!important
 }
   
   
 .fa-facebook{
-    color: rgb(54, 106, 237);
+    fill: rgb(54, 106, 237);
 }
   
 .fa-youtube{
-    color: rgb(227, 33, 33);
+    fill: rgb(227, 33, 33);
 }
 
 .secc-sistemas{
