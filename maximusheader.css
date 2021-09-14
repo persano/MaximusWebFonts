@@ -279,22 +279,25 @@ a {
 }
 /*AUTOCOMPLETADO MOBILE*/
 .auto-complete-mobile {
-  position: absolute !important;
-  width: 85% !important;
-  background-color: #fff !important;
-  border: none !important;
-  left: 12% !important;
-  border: 0.5px solid rgba(198, 198, 198, 0.516) !important;
-  border-top: none !important;
-  color: black !important;
+  background-color: #fff!important;
+  border: none!important;
+  border: .5px solid hsla(0,0%,78%,.516)!important;
+  border-top: none!important;
+  color: #000!important;
+  left: 11.2%!important;
+  position: absolute!important;
+  width: 86%!important;
+  z-index: -1;
+  top: 67%;
+  border-bottom-left-radius: 18px;
+  border-bottom-right-radius: 18px;
 }
 .auto-complete-mobile:first-child {
   border-radius: 5px 5px 0 0 !important;
 }
 
 .auto-complete-mobile:last-child {
-  border-radius: 0 0 5px 5px !important;
-  margin-top: -0.2em;
+  margin-top: -.2em;
 }
 
 .auto-search {
