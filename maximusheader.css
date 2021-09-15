@@ -1604,3 +1604,6 @@ ul {
   body.modal-open {
   overflow: visible !important;
 }
+.categorias-web > p{
+  margin-bottom: 0;
+  }
