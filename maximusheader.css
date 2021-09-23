@@ -1151,7 +1151,7 @@ a {
     margin: auto;
     display: none;
   }
-  .flex-componentes-perifericos {
+  .flex-componentes-perifericos,.flex-componentes-perifericos:hover {
     display: flex !important;
     flex-direction: row !important;
     background-color: #061321 !important;
