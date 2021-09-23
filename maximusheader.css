@@ -256,7 +256,7 @@ a {
 .search-mobile .form-header input {
   flex: 1 !important;
   width: 90% !important;
-  height: 100%;
+  height: 100% !important;
   padding: 12px 0 12px 10px !important;
   border: none !important;
   border-radius: 5px 0 0 5px !important;
