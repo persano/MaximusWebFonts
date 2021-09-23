@@ -1604,7 +1604,34 @@ ul {
   body.modal-open {
   overflow: visible !important;
 }
-.categorias-web > p {
-	margin-bottom: auto !important;
-	margin-top: auto !important;
+:root::-webkit-scrollbar {
+  -webkit-appearance: none;
 }
+
+:root::-webkit-scrollbar:vertical {
+  width:10px;
+}
+
+:root::-webkit-scrollbar-button:increment,.contenedor::-webkit-scrollbar-button {
+  display: none;
+} 
+
+:root::-webkit-scrollbar:horizontal {
+  height: 10px;
+}
+
+:root::-webkit-scrollbar-thumb {
+  background-color: #797979;
+  border-radius: 20px;
+  border: 2px solid #f1f2f3;
+}
+
+:root::-webkit-scrollbar-track {
+  border-radius: 10px;  
+}
+
+:root{
+scrollbar-color: #7f7f7f white;
+scrollbar-width: thin;
+}
+#totalwatts {text-transform: capitalize;color: red;font-size: 1em;font-weight: 800;display: block;position: initial;margin-bottom: 0.5em;text-align: center;}
