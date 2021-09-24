@@ -897,7 +897,9 @@ a {
   }
 
   .header-bottom p {
-    color: #374957;
+    color:#374957;
+    margin-bottom: 0!important;
+    margin-top: 0 !important;
   }
   .categorias-web {
     min-width: 150px;
