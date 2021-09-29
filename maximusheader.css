@@ -1142,13 +1142,13 @@ a {
   /*ACA ESTABA EL OPACIDAD-MENU*/
 
   /* SIDEBAR-COMPONENTES CON 2 COLUMAS */
-  /*.sidebar-componentes,*/
-  .sidebar-componentes {
+  /*.sidebar-doble,*/
+  .sidebar-doble {
     width: 500px;
     margin: auto;
     display: none;
   }
-  .sidebar-perifericos {
+  .sidebar-triple {
     width: 750px;
     margin: auto;
     display: none;
