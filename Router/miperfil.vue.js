@@ -91,7 +91,7 @@ var miPerfil = {
                       name="idcliente"
                       required=""
                       maxlength="50"
-                      v-model="formCustData.cust_id"
+                      v-model="cust_id"
                       disabled
                     />
                   </div>
@@ -105,7 +105,7 @@ var miPerfil = {
                       required=""
                       maxlength="50"
                       data-bv-field="nombre"
-                      v-model="formCustData.cust_name"
+                      v-model="cust_name"
                     />
                   </div>
                 </div>
@@ -121,7 +121,7 @@ var miPerfil = {
                       maxlength="50"
                       pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"
                       data-bv-field="email"
-                      v-model="formCustData.cust_email"
+                      v-model="cust_email"
                     />
                   </div>
                   <div class="col-md-6 control-label">
@@ -132,7 +132,7 @@ var miPerfil = {
                       id="telefono"
                       name="telefono"
                       required=""
-                      v-model="formCustData.cust_phone1"
+                      v-model="cust_phone1"
                       minlength="8"
                       data-maxlength="17"
                       maxlength="17"
@@ -145,13 +145,13 @@ var miPerfil = {
                 <div class="row">
                   <div class="col-md-12">
                       Clase Fiscal <font color="red">*</font><br>
-                      <select id="tipo_fiscal" class="form-control input-compra" style="float:left;min-width:85px;margin-bottom: 10px;" v-model="formCustData.fc_id"  @change="onChange">
+                      <select id="tipo_fiscal" class="form-control input-compra" style="float:left;min-width:85px;margin-bottom: 10px;" v-model="fc_id"  @change="onChange">
                       <option value="">Elige una Clase Fiscal</option>
                       <option value="2">Consumidor Final</option>
                       <option value="3">Monotributista</option>
                       <option value="1">Responsable Inscripto</option>
                       </select>
-                      <small class="help-block" style="display: inline;" v-if="formCustData.fc_id !== null && !validateTaxType(formCustData.fc_id)">Por favor elija una clase fiscal</small>
+                      <small class="help-block" style="display: inline;" v-if="fc_id !== null && !validateTaxType(fc_id)">Por favor elija una clase fiscal</small>
                   </div>
                 </div>
                 <div class="row">
@@ -164,7 +164,7 @@ var miPerfil = {
                       required=""
                       style="float: left; min-width: 85px"
                       data-bv-field="tipo_documento"
-                      v-model="formCustData.tnt_id" 
+                      v-model="tnt_id" 
                       disabled="true"
                     >
                       <option value="">Elige un Tipo</option>
@@ -180,7 +180,7 @@ var miPerfil = {
                       class="form-control input-perfil"
                       id="numero_documento"
                       name="numero_documento"
-                      v-model="formCustData.cust_taxNumber"
+                      v-model="cust_taxNumber"
                       required=""
                       maxlength="11"
                       data-minlength="7"
@@ -231,7 +231,7 @@ var miPerfil = {
                         class="form-control col-md-12 input-perfil"
                         required=""
                         data-bv-field="provincia"
-                        v-model="formCustData.state_id"
+                        v-model="state_id"
                       >
                         <option value="">Seleccione una provincia</option>
                         <option value="54020">Buenos Aires</option>
@@ -269,7 +269,7 @@ var miPerfil = {
                         class="form-control input-perfil"
                         id="direccion_calle"
                         name="direccion_calle"
-                        v-model="formCustData.street"
+                        v-model="street"
                         required=""
                         maxlength="40"
                         autocomplete="new-password"
@@ -283,7 +283,7 @@ var miPerfil = {
                         class="form-control input-perfil"
                         id="direccion_piso"
                         name="direccion_piso"
-                        v-model="formCustData.street_floor"
+                        v-model="street_floor"
                         maxlength="6"
                         autocomplete="new-password"
                         data-bv-field="direccion_piso"
@@ -296,7 +296,7 @@ var miPerfil = {
                         class="form-control input-perfil"
                         id="direccion_departamento"
                         name="direccion_departamento"
-                        v-model="formCustData.street_apt"
+                        v-model="street_apt"
                         maxlength="4"
                         autocomplete="new-password"
                         data-bv-field="direccion_departamento"
@@ -309,7 +309,7 @@ var miPerfil = {
                         class="form-control input-perfil"
                         id="direccion_cp"
                         name="direccion_cp"
-                        v-model="formCustData.cust_zip"
+                        v-model="cust_zip"
                         required=""
                         maxlength="4"
                         pattern="^[0-9]{4}$"
@@ -326,7 +326,7 @@ var miPerfil = {
                         class="form-control input-perfil"
                         id="direccion_localidad"
                         name="direccion_localidad"
-                        v-model="formCustData.city"
+                        v-model="city"
                         required=""
                         maxlength="40"
                         autocomplete="new-password"
@@ -357,6 +357,6 @@ var miPerfil = {
       </div>
     </div>
   </div>`,
-    props: ['formCustData']
+    params: ["cust_id", "cust_name", "cust_email", "cust_phone1", "fc_id", "cust_taxNumber", "tnt_id", "state_id", "cust_city", "cust_zip", "street", "street_apt", "street_floor"]
   };
   
