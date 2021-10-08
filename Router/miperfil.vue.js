@@ -357,6 +357,6 @@ var miPerfil = {
       </div>
     </div>
   </div>`,
-    props: ['formCustData'],
+    props: ['formCustData']
   };
   
