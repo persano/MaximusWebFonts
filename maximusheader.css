@@ -1144,7 +1144,7 @@ a {
   /* SIDEBAR-COMPONENTES CON 2 COLUMAS */
   /*.sidebar-doble,*/
   .sidebar-doble {
-    width: 500px;
+    width: 550px;
     margin: auto;
     display: none;
   }
@@ -1275,6 +1275,10 @@ _:-webkit-any(x):-webkit-full-screen,
   .opacidad-menu {
     top: 0;
   }
+  #modalcomprobantenologueado a {
+    margin-bottom: 1em !important;
+}
+#modalcomprobantenologueado .title-inicio-sesion {margin-top: 0.3em !important;}
 }
 button {
   outline: 0 !important;
