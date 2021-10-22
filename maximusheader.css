@@ -1144,7 +1144,7 @@ a {
   /* SIDEBAR-COMPONENTES CON 2 COLUMAS */
   /*.sidebar-doble,*/
   .sidebar-doble {
-    width: 550px;
+    width: 575px;
     margin: auto;
     display: none;
   }
