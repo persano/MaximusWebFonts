@@ -1539,7 +1539,10 @@ ul {
   .seccion ul li a {
     color: white;
     transition: ease-in-out 0.1s;
-    font-size: 0;
+  }
+
+  .seccion ul li a.redessociales{
+    font-size: 0
   }
 
   .seccion ul li:hover a {
