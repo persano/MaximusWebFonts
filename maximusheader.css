@@ -1430,6 +1430,9 @@ ul {
   color: grey;
   font-size: 2rem;
 }
+.redes a.redessociales{
+  font-size: 0
+  }
 .redes a svg {
   width: 30px;
   height: 30px;
