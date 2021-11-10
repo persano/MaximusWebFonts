@@ -260,7 +260,7 @@ a {
   padding: 12px 0 12px 10px !important;
   border: none !important;
   border-radius: 5px 0 0 5px !important;
-  margin-bottom: 0px !important;
+  margin-bottom: 0 !important;
 }
 .search-mobile .form-header input {
   outline: none !important;
@@ -714,7 +714,7 @@ a {
     justify-content: space-between;
     align-items: center;
     height: 80%;
-    padding: 20px 0 0 0;
+    padding: 20px 0 0;
   }
 
   .container-header-top {
@@ -773,7 +773,7 @@ a {
   .search-web .form-web-header {
     width: 65%;
     margin: auto;
-    padding: 5px 7px 5px 7px;
+    padding: 5px 7px;
     background-color: #fff;
     border-radius: 7px;
     border: 1px solid #ccc;
@@ -1474,7 +1474,7 @@ ul {
 .logo-gbp img {
   width: 120px;
   filter: saturate(110%) contrast(90%) brightness(115%)
-    drop-shadow(0px 0px 1px #0000003b);
+    drop-shadow(0 0 1px #0000003b);
 }
 
 .data-fiscal-a img {
@@ -1497,7 +1497,7 @@ ul {
     transform: scale(1.5);
     margin-right: 40px;
     filter: saturate(110%) contrast(90%) brightness(135%)
-      drop-shadow(0px 0px 1px #0000003b);
+      drop-shadow(0 0 1px #0000003b);
   }
 }
 
@@ -1588,7 +1588,7 @@ ul {
   }
   .gbp {
     filter: saturate(110%) contrast(90%) brightness(135%)
-      drop-shadow(0px 0px 1px #0000003b);
+      drop-shadow(0 0 1px #0000003b);
     margin-right: 20px;
   }
 
