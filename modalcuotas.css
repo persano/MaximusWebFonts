@@ -1,0 +1,114 @@
+#modalCuotasPlanAhora12 .content-modal {
+    padding: 0 0 1em;
+}
+#modalCuotasPlanAhora12 .content-modal .content-table {
+    overflow-x: auto;
+}
+#modalCuotasPlanAhora12 .content-modal .content-table table td {
+    color: #7e7e83;
+}
+#modalCuotasPlanAhora12 .content-modal .content-table table td,
+#modalCuotasPlanAhora12 .content-modal .content-table table th {
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+}
+#modalCuotasPlanAhora12 .content-modal .content-table table th {
+    font-weight: 600;
+}
+#modalCuotasPlanAhora12 .content-modal .content-table table th,
+.modal .modal-header h5 {
+    font-size: 14px;
+    text-align: center;
+}
+#modalCuotasPlanAhora12 .modal-md .modal-content .modal-body .table thead th {
+    border-bottom: 2px solid #dee2e6;
+    vertical-align: bottom;
+}
+#modalCuotasPlanAhora12 .modal-md .modal-content .modal-body .table td,
+#modalCuotasPlanAhora12 .modal-md .modal-content .modal-body .table th {
+    border-top: 1px solid #dee2e6;
+    padding: 0.75rem;
+    vertical-align: top;
+}
+#modalCuotasPlanAhora12 .modal-md .modal-content .modal-body .table {
+    color: #212529;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+.modal-dialog-centered {
+    align-items: center;
+    display: flex;
+    min-height: calc(100% - 1rem);
+}
+#modalahora12content {
+    width: 100%;
+}
+#modalCuotasPlanAhora12 .table thead th {
+    border-bottom: 2px solid #dee2e6;
+    vertical-align: bottom;
+}
+#modalCuotasPlanAhora12 .table td,
+#modalCuotasPlanAhora12 .table th {
+    padding: 0.75rem;
+    vertical-align: top;
+}
+#modalCuotasPlanAhora12 .modal-body {
+    padding: 0 1em 1em;
+}
+#modalCuotasPlanAhora12 .modal-header,
+#modalEnvioPack .modal-header {
+    padding: 1em;
+}
+#modalCuotasPlanAhora12 .table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+#modalCuotasPlanAhora12 .close,
+#modalEnvioPack .close {
+    color: #60f;
+    opacity: 0.5;
+}
+#modalCuotasPlanAhora12 small {
+    color: red;
+    font-weight: bolder;
+}
+#mercadopagomodal,
+#mercadopagomodal2 {
+    color: #000;
+    display: block;
+    font-weight: bolder;
+    font-weight: 400;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 0.75em;
+    padding-top: 1.25em;
+    text-align: center;
+}
+#disclaimercuotas {
+    color: #666;
+    font-size: 10px;
+    padding-top: 1em;
+    text-align: center;
+}
+#modalCuotasPlanAhora12.modal .modal-header h5,
+#modalEnvioPack .modal-header h5 {
+    color: #333;
+    font-size: 24px;
+    text-align: center;
+    width: 100%;
+}
+@media screen and (max-width: 768px) {
+    #modalCuotasPlanAhora12 .content-modal .content-table table td,
+    #modalCuotasPlanAhora12 .content-modal .content-table table th {
+        font-size: 14px;
+        text-align: center;
+        vertical-align: middle;
+    }
+    #modalCuotasPlanAhora12 .modal-body {
+        padding: 0 0.5em 0.5em;
+    }}
+@media (min-width: 576px) {
+    #modalCuotasPlanAhora12 .modal-dialog {
+        max-width: 40em;
+    }
+}
