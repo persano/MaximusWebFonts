@@ -778,11 +778,6 @@ textarea:focus {
     overflow: auto;
     padding: 2em;
 }
-.content-table table {
-    color: #212529;
-    margin-bottom: 1rem;
-    width: 100%;
-}
 
 #botonconsultar {
     background-color: #0084e0;
@@ -1551,21 +1546,7 @@ input[type="checkbox"]:checked + label:after {
 .content-table * {
     color: #b0a99f !important;
 }
-.content-table small {
-    color: red !important;
-}
-.content-table a {
-    color: #6464c1 !important;
-}
-.dark #contenidoModalSelector input {
-    background: #202324 !important;
-}
-.dark #modalEnvioPack .modal-footer {
-    background-color: #181a1b !important;
-}
-.dark #contenedornoproducto svg {
-    fill: #b0a99f !important;
-}
+
 #centrartitulo {
     z-index: 0;
 }

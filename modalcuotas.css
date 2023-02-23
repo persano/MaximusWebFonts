@@ -1,3 +1,27 @@
+.content-table table {
+    color: #212529;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.content-table small {
+    color: red !important;
+}
+.content-table a {
+    color: #6464c1 !important;
+}
+.dark #contenidoModalSelector input {
+    background: #202324 !important;
+}
+.dark #modalEnvioPack .modal-footer {
+    background-color: #181a1b !important;
+}
+.dark #contenedornoproducto svg {
+    fill: #b0a99f !important;
+}
+.modal-header {
+    background-color: #390080;
+}
 #modalCuotasPlanAhora12 .content-modal {
     padding: 0 0 1em;
 }
@@ -111,4 +135,13 @@
     #modalCuotasPlanAhora12 .modal-dialog {
         max-width: 40em;
     }
+}
+
+#modalCuotasPlanAhora12 .modal-header {
+    padding: 1em;
+}
+
+#modalCuotasPlanAhora12 .close {
+    color: #60f;
+    opacity: 0.5;
 }
