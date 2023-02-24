@@ -1,3 +1,22 @@
+.texto button {
+    color: #228cff;
+    display: block;
+    font-size: 14px;
+    line-height: 18px;
+    margin: 2px 15px 0 0;
+    outline: none;
+    padding: 0;
+    text-align: left;
+}
+
+.btn-sin-fondo-azul {
+    background-color: transparent;
+    border: none;
+    color: #228cff;
+    display: block;
+    outline: none;
+}
+
 .content-table table {
     color: #212529;
     margin-bottom: 1rem;
