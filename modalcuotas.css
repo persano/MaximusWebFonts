@@ -17,6 +17,14 @@
     outline: none;
 }
 
+.btn-sin-fondo-azul-armador {
+    background-color: transparent;
+    border: none;
+    color: #228cff;
+    display: inline-block;
+    outline: none;
+}
+
 button:hover {
     opacity: 0.75;
     transition: all 0.15s ease-in-out;
