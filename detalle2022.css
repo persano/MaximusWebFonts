@@ -16,10 +16,7 @@ h5 {
 #detalle .btn.btn-compra:hover {
     opacity: 0.75;
 }
-button:hover {
-    opacity: 0.75;
-    transition: all 0.15s ease-in-out;
-}
+
 .form-control {
     border-color: #00f402;
     font-weight: 500;
@@ -353,7 +350,7 @@ fieldset a {
     justify-content: flex-start;
 }
 .info-ficha .texto a,
-.info-ficha .texto button {
+.info-ficha {
     color: #228cff;
     display: block;
     font-size: 14px;
@@ -363,13 +360,7 @@ fieldset a {
     padding: 0;
     text-align: left;
 }
-.btn-sin-fondo-azul {
-    background-color: transparent;
-    border: none;
-    color: #228cff;
-    display: block;
-    outline: none;
-}
+
 .producto-envio .icono i {
     color: hsla(240, 2%, 50%, 0.3);
     font-size: 22px;
