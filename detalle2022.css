@@ -1536,6 +1536,7 @@ input[type="checkbox"]:checked + label:after {
 #contenidoModalSelector *,
 .content-table * {
     color: #b0a99f !important;
+    text-aling: center;
 }
 
 #centrartitulo {
