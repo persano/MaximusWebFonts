@@ -34,6 +34,7 @@ button:hover {
     color: #212529;
     margin-bottom: 1rem;
     width: 100%;
+    text-aling: center;
 }
 
 .content-table small {
