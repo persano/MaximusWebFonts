@@ -4,8 +4,12 @@
     }
 }
 
+.negrita {
+    font-weight: 700;
+}
+
 .modal {
-color: #666;
+    color: #666;
 }
 
 .texto button {
