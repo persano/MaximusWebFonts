@@ -1,3 +1,7 @@
+.modal {
+color: #666;
+}
+
 .texto button {
     color: #228cff;
     display: block;
@@ -28,6 +32,12 @@
 button:hover {
     opacity: 0.75;
     transition: all 0.15s ease-in-out;
+}
+
+#contenidoModalSelector *,
+.content-table * {
+    color: #b0a99f !important;
+    text-align: center;
 }
 
 .content-table table {
