@@ -37,6 +37,7 @@
     color: #228cff;
     display: inline-block;
     outline: none;
+    cursor: pointer;
 }
 
 button:hover {
