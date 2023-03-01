@@ -161,10 +161,7 @@ button:hover {
 #modalCuotasPlanAhora12 .modal-body {
     padding: 0 1em 1em;
 }
-#modalCuotasPlanAhora12 .modal-header,
-#modalEnvioPack .modal-header {
-    padding: 1em;
-}
+
 #modalCuotasPlanAhora12 .table-striped tbody tr:nth-of-type(odd) {
     background-color: rgba(0, 0, 0, 0.05);
 }
