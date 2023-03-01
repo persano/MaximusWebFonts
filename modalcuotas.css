@@ -12,10 +12,6 @@
     text-align: center;
 }
 
-.precio-lista {
-    padding: 0.3em 15px;
-}
-
 .precio-lista p {
     color: rgba(0, 0, 0, 0.75);
     font-size: 15px;
