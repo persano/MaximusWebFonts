@@ -27,7 +27,7 @@
     font-weight: 700;
     margin: 0;
     text-align: center;
-
+}
 
 @media (min-width: 576px) {
     #modalCuotasPlanAhora12 .modal-dialog {
