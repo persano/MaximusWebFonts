@@ -1,12 +1,3 @@
-.btn-sin-fondo-azul-armador {
-    background-color: transparent;
-    border: none;
-    color: #228cff;
-    display: inline-block;
-    outline: none;
-    cursor: pointer;
-}
-
 .itemBox--price .value-item {
     color: #00e602;
     display: block;
@@ -27,6 +18,15 @@
     font-weight: 700;
     margin: 0;
     text-align: center;
+}
+
+.btn-sin-fondo-azul-armador {
+    background-color: transparent;
+    border: none;
+    color: #228cff;
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
 }
 
 @media (min-width: 576px) {
