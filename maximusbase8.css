@@ -337,7 +337,7 @@ small {
 
 .row {
     display: flex;
-  /*flex-wrap: wrap;*/
+    flex-wrap: wrap;
     margin-left: -15px;
     margin-right: -15px
 }
@@ -361,8 +361,9 @@ small {
 .col-sm-6,
 .col-sm-8 {
     min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 15px;
     position: relative;
     width: 100%
 }
