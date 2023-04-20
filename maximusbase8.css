@@ -2499,9 +2499,9 @@ div.product img {
     border: 1px solid #01f603
 }
 
-.product:hover div.description h4 a {
+/*.product:hover div.description h4 a {
     color: #01f603
-}
+}*/
 
 .product:hover .btn.btn-compra {
     background: #76da02;
@@ -2523,7 +2523,7 @@ div.product img {
 }
 
 .product h4 a:hover {
-    color: #59d802;
+    /*color: #59d802;*/
     font-size: 14px;
     padding: 5px;
     text-decoration: none
