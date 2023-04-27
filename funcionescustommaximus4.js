@@ -111,9 +111,11 @@ function funCalculateUserFunction() {
         t = $("#hidCartTotalTax").val(),
         a = $("#hidCartSubTotal").val(),
         o = $("#hidCartTotal").val(),
+        /*
         o = o.replace(',', '.');
         o = parseFloat(o).toFixed(0);
         o = o.toString();
+        */
         n = $("#hidCartInterest").val(),
         i = $("#hidCartDiscount").val();
     $("#contador").html(e),
