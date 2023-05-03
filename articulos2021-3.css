@@ -92,7 +92,7 @@ div.button-pager li a:hover {
 
 .product:hover {
     border: 1px solid #7200ff;
-    box-shadow: 0 0 5px 2px #01f603;
+    box-shadow: 0 0 5px 2px #7200ff;
     transition: .1s
 }
 
