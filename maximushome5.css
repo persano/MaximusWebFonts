@@ -1333,8 +1333,8 @@ section#novedades_preventa div.owl-carousel .col-md-prod {
 }
 
 .product:hover {
-    border: 1px solid #01f603;
-    box-shadow: 0 0 5px 2px #01f603;
+    border: 1px solid #7200ff;
+    box-shadow: 0 0 5px 2px #7200ff;
     transition: .1s
 }
 
