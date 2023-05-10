@@ -5002,3 +5002,11 @@ img.img-responsive {
     background-color: gray !important;
     border-bottom-color: #5a5a5a !important;
 }
+
+.products-label-left-bottom {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 9999;
+    mix-blend-mode: normal !important;
+}
