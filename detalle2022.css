@@ -352,12 +352,12 @@ fieldset a {
 .info-ficha .texto a,
 .info-ficha {
     color: #228cff;
-    display: block;
+    display: flex;
     font-size: 14px;
     line-height: 18px;
     margin: 2px 15px 0 0;
     outline: none;
-    padding: 0;
+    padding: 10px;
     text-align: left;
 }
 
