@@ -562,7 +562,7 @@ svg:not(:root) {
     }
 }
 .vitrine-button {
-    background-color: #7200ff;
+    background-color: #40a640;
     border-radius: 12px;
     color: #fff;
     display: flex;
@@ -1099,7 +1099,7 @@ img.img-responsive {
     font-weight: 400;
 }
 .price {
-    color: #403b3b;
+    color: #7200ff;
 }
 .product h4 a:hover {
     font-size: 13.5px;
