@@ -1457,7 +1457,7 @@ input[type="checkbox"]:checked + label:after {
 .dark .datos-sug > h3,
 .dark .modal-body h3,
 .dark .precio-prod,
-.dark .price,
+.dark,
 .dark .priceahora,
 .dark .rowHeader,
 .dark .tableHeader,
