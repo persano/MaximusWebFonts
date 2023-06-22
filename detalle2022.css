@@ -401,7 +401,23 @@ fieldset a {
     background-color: #0084e0;
     border: 1px solid transparent;
     border-bottom: 2px solid #016ab3;
-    color: #fff;
+    color: #c8c8c8;
+    display: block;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+    outline: none;
+    padding: 0.5em;
+    width: 12em;
+    border-radius: 8px;
+}
+
+btn-compra2 {
+    background-color: #c8c8c8;;
+    border: 1px solid transparent;
+    border-bottom: 2px solid #016ab3;
+    color: #0084e0;
     display: block;
     float: none;
     margin-left: auto;
