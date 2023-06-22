@@ -409,7 +409,7 @@ fieldset a {
     margin-top: 1em;
     outline: none;
     padding: 0.5em;
-    width: 12em;
+    width: 200px;
     border-radius: 8px;
 }
 
@@ -425,8 +425,9 @@ fieldset a {
     margin-top: 1em;
     outline: none;
     padding: 0.5em;
-    width: 12em;
+    width: 200px;
     border-radius: 8px;
+    font-weight: bold;
 }
 .sp-wrap {
     background: #fff;
