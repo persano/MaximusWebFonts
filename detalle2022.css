@@ -399,7 +399,7 @@ fieldset a {
 }
 #detalle .btn.btn-compra {
     background-color: #0084e0;
-    border: 1px solid transparent;
+    /*border: 1px solid transparent;*/
     border-bottom: 2px solid #016ab3;
     color: #fff;
     display: block;
@@ -415,7 +415,7 @@ fieldset a {
 
 #detalle .btn.btn-compra2 {
     background-color: #e1e0e080;
-    border: 1px solid transparent;
+   /* border: 1px solid transparent; */
     border-bottom: 2px solid #016ab3;
     color: #0084e0;
     display: block;
