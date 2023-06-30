@@ -176,7 +176,8 @@ div.caja-prod-armado .precio-ami {
 #breadcrumb {
     background: #f6f6f6;
     display: block;
-    margin: 1em auto 1em 0;
+    /*margin: 1em auto 1em 0;*/
+    margin: 0;
     padding-left: 0;
     text-decoration: none;
 }
