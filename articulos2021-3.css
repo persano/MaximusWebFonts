@@ -49,7 +49,7 @@ div.button-pager li a:hover {
 }
 
 .vitrine-button {
-    background-color: #40A640;
+    background-color: #08BC08;
     border-radius: 8px;
     color: #fff;
     display: flex;
@@ -81,7 +81,7 @@ div.button-pager li a:hover {
 }
 
 .vitrine-button:hover {
-    background-color: #5200b7;
+    background-color: #5B21A5;
     transition: .2s
 }
 
@@ -91,8 +91,8 @@ div.button-pager li a:hover {
 }
 
 .product:hover {
-    border: 1px solid #7200ff;
-    box-shadow: 0 0 5px 2px #7200ff;
+    border: 1px solid #5B21A5;
+    box-shadow: 0 0 5px 2px #5B21A5;
     transition: .1s
 }
 
@@ -507,7 +507,7 @@ img.img-responsive {
 }
 
 .price {
-    color: #4400AF;
+    color: #5B21A5;
     font-weight: bold;
 }
 
