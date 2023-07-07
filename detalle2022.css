@@ -1518,7 +1518,7 @@ input[type="checkbox"]:checked + label:after {
 .dark .prodtitulo,
 .dark .solostock,
 .dark .texto > p {
-    color: #b0a99f !important;
+    color: #b0a99f;
 }
 .dark .product {
     background-color: #181a1b !important;
