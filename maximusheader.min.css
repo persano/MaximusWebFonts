@@ -1540,8 +1540,13 @@ ul {
         display: flex
     }
 
+    .infoFooter {
+        color: #08BC08;
+    }
+        
+        
     .seccion h3 {
-        color: var(--maximus-green);
+        /*color: var(--maximus-green);*/
         margin-bottom: 10px;
         text-align: left
     }
