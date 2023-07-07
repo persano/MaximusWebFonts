@@ -1333,8 +1333,8 @@ section#novedades_preventa div.owl-carousel .col-md-prod {
 }
 
 .product:hover {
-    border: 1px solid #7200ff;
-    box-shadow: 0 0 5px 2px #7200ff;
+    border: 1px solid #5B21A5;
+    box-shadow: 0 0 5px 2px #5B21A5;
     transition: .1s
 }
 
@@ -1609,7 +1609,7 @@ section#novedades_preventa div.owl-carousel .col-md-prod {
 }
 
 .vitrine-button {
-    background-color: #40A640;
+    background-color: #08BC08;
     border-radius: 12px;
     color: #fff;
     display: flex;
