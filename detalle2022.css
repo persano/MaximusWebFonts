@@ -616,8 +616,8 @@ svg:not(:root) {
     transition: 0.1s;
 }
 .product:hover {
-    border: 1px solid #7200ff;
-    box-shadow: 0 0 5px 2px #7200ff;
+    border: 1px solid #5B21A5;
+    box-shadow: 0 0 5px 2px #5B21A5;
     transition: 0.1s;
 }
 #svgahora18 {
@@ -1118,7 +1118,7 @@ img.img-responsive {
     font-weight: 400;
 }
 .price {
-    color: #7200ff;
+    color: #5B21A5;
 }
 .product h4 a:hover {
     font-size: 13.5px;
