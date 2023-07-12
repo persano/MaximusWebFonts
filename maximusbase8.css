@@ -1276,6 +1276,19 @@ button.close {
     margin-right: auto !important
 }
 
+.my-0 {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+.ml-0 {
+    margin-left: 0 !important;
+}
+
+.mr-0 {
+    margin-right: 0 !important;
+}
+
 .dropdown-menu.show {
     display: block
 }
