@@ -72,18 +72,18 @@ a {
 
 .container {
     margin: auto;
-    width: 95%
+    width: 95%;
 }
 
 .links {
     background-color: #0e2a47;
     height: 10px;
     width: 100%;
-    z-index: 98
+    z-index: 100;
 }
 
 .links a {
-    display: none
+    display: none;
 }
 
 .container-header-top {
@@ -91,7 +91,7 @@ a {
     display: flex;
     height: 90%;
     margin: auto;
-    width: 95%
+    width: 95%;
 }
 
 .header-top {
@@ -103,7 +103,7 @@ a {
     margin-bottom: 5px;
     padding: 1rem 0;
     width: 100%;
-    z-index: 99
+    z-index: 99;
 }
 
 .header-bottom,
@@ -626,7 +626,8 @@ a {
     .links a {
         color: #fff;
         display: flex;
-        margin-left: 1rem
+        margin-left: 1rem;
+        align-items: center;
     }
 
     .links a i {
@@ -1688,4 +1689,16 @@ body.modal-open {
 
 .sp-lightbox {
     z-index: 9999999999
+}
+
+.dropdown-header-maximus {
+    background-color: #0e2a47;
+}
+
+.dropdown-header-maximus .dropdown-item {
+    color: #fff;
+}
+
+.dropdown-header-maximus .dropdown-item:hover {
+    background-color: #08192b;
 }
