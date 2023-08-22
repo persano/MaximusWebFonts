@@ -453,7 +453,8 @@ ul.menuUl li label {
 @media (max-width:768px) {
     .botonfiltrar {
         display: block;
-        margin-bottom: .8em
+        margin-bottom: .8em;
+        text-aling: center;
     }
 }
 
