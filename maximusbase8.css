@@ -1177,7 +1177,7 @@ button.close {
 }
 
 .modal.show .modal-dialog {
-    transform: translate(0, 140px)
+    transform: translate(0, -140px)
 }
 
 .modal-open .modal {
