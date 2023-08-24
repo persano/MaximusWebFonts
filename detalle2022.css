@@ -1142,6 +1142,9 @@ body.modal-open {
 }
 .sp-lightbox {
     z-index: 3;
+    top: 55px;
+    bottom: auto;
+    
 }
 .image,
 .product .image a img,
