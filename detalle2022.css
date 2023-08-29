@@ -1486,20 +1486,20 @@ input[type="checkbox"]:checked + label:after {
 .dark .tableHeader,
 .dark .title-sol > span,
 .dark .titprod {
-    color: #b0a99f !important;
+    color: #f2f2f2 !important;
 }
 .dark .nav-tabs {
     border-top: 1px solid #3a3e41 !important;
 }
 .dark .title-sol.style2:after {
-    background: #b0a99f !important;
+    background: #f2f2f2 !important;
 }
 .dark #myInput,
 .dark #myInput2,
 .dark .btnart,
 .dark .cantidad > input {
     background-color: hsla(197, 3%, 41%, 0.42) !important;
-    color: #b0a99f !important;
+    color: #f2f2f2 !important;
 }
 .dark .option {
     background-color: #656a6c !important;
@@ -1522,7 +1522,7 @@ input[type="checkbox"]:checked + label:after {
 .dark .prodtitulo,
 .dark .solostock,
 .dark .texto > p {
-    color: #b0a99f;
+    color: #f2f2f2;
 }
 .dark .product {
     background-color: #181a1b !important;
@@ -1558,7 +1558,7 @@ input[type="checkbox"]:checked + label:after {
 }
 #contenidoModalSelector *,
 .content-table * {
-    color: #b0a99f !important;
+    color: #f2f2f2 !important;
     text-align: center;
 }
 
