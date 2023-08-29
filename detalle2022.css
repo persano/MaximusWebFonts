@@ -493,7 +493,7 @@ body .sectionContainer {
 #solapas a.nav-link.active {
     background-color: #fff;
     border: none;
-    color: #9e9e9e;
+    color: #f2f2f2;
     margin-top: 1em;
     text-transform: uppercase;
 }
