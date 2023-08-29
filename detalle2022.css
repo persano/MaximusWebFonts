@@ -342,7 +342,7 @@ fieldset a {
     text-align: left;
 }
 .producto-pago-cuotas .mercado-pago .resumen .texto p {
-    color: #7e7e83;
+    color: #f2f2f2;
 }
 .producto-pago-cuotas .mercado-pago .resumen .buttons,
 .producto-pago-cuotas .sucursal .resumen .buttons {
@@ -396,7 +396,7 @@ fieldset a {
     display: block;
 }
 .producto-ubicacion .texto p {
-    color: #7e7e83;
+    color: #f2f2f2;
 }
 #detalle .btn.btn-compra {
     background-color: #0084e0;
@@ -676,7 +676,7 @@ button:not(:disabled) {
     color: #08BC08;
 }
 .producto-envio .texto p {
-    color: #7e7e83;
+    color: #f2f2f2;
 }
 #loaderforchanges {
     background: url(https://cdn.jsdelivr.net/gh/persano/bannersmaximus@master/doblecolorspinnermx.svg) 50% 50% no-repeat #ffffff78;
@@ -876,7 +876,7 @@ p#contenidoModalCotizacion {
 }
 .cantidad button,
 .cantidad input {
-    color: #7e7e83;
+    color: #f2f2f2;
     height: 36px;
     margin: 0;
 }
@@ -1447,7 +1447,7 @@ input[type="checkbox"]:checked + label:after {
     z-index: 4;
 }
 .solostock {
-    color: #7e7e83;
+    color: #f2f2f2;
     display: block;
     font-weight: 400 !important;
 }
