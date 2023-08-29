@@ -342,7 +342,7 @@ fieldset a {
     text-align: left;
 }
 .producto-pago-cuotas .mercado-pago .resumen .texto p {
-    color: #f2f2f2;
+    color: #7e7e83;
 }
 .producto-pago-cuotas .mercado-pago .resumen .buttons,
 .producto-pago-cuotas .sucursal .resumen .buttons {
@@ -1447,7 +1447,7 @@ input[type="checkbox"]:checked + label:after {
     z-index: 4;
 }
 .solostock {
-    color: #f2f2f2;
+    color: #7e7e83;
     display: block;
     font-weight: 400 !important;
 }
