@@ -1364,7 +1364,7 @@ section#novedades_preventa div.owl-carousel .col-md-prod {
 
 .product .image {
     /*background: linear-gradient(180deg, #fff, #d5d5d5);*/
-    background: #f1f1f1;
+    background: #ececec;
     overflow: visible;
     width: 100%
 }
