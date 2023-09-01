@@ -1407,8 +1407,8 @@ section#novedades_preventa div.owl-carousel .col-md-prod {
 }
 
 .boxpchome {
-    background: #fff;
-    border: 1px solid #fff;
+    /*background: #fff;*/
+    border: 1px solid #f2f2f2;
     border-radius: 4px;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
