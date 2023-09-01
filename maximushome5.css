@@ -1412,7 +1412,7 @@ section#novedades_preventa div.owl-carousel .col-md-prod {
     border-radius: 4px;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
-    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .1);
+    /*box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .1);*/
     margin-bottom: .5em
 }
 
