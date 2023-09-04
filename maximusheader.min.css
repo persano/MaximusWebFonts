@@ -567,13 +567,14 @@ a {
 }
 
 .arma-tu-pc,
+.arma-tu-combo,
 .arma-tu-pc i {
     color: var(--maximus-green) !important
 }
 
-.arma-tu-combo {
+/*.arma-tu-combo {
     color: #fff
-}
+}*/
 
 .titulo-seccion-interna-mobile {
     align-items: center;
