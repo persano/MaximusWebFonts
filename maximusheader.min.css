@@ -916,10 +916,10 @@ a {
         cursor: pointer;
         display: flex;
         flex-direction: column;
-        height: 15px;
+        height: 19px; /*< 15px*/
         justify-content: space-between;
-        max-width: 17px;
-        min-width: 17px
+        max-width: 23px; /*17px*/
+        min-width: 23px /*17px*/
     }
 
     .hamburger-menu-web span {
