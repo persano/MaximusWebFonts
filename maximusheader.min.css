@@ -356,7 +356,7 @@ a {
 }
 
 .menu-categorias {
-    background-color: #061321;
+    background-color: #0e0f0f;
     position: fixed;
     top: 120px;
     transform: translateX(-100%);
@@ -522,7 +522,7 @@ a {
 }
 
 .sub-menu-categorias-slide-active {
-    background-color: #061321;
+    background-color: #0e0f0f;
     transform: translateX(0)
 }
 
