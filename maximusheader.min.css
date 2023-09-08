@@ -789,8 +789,8 @@ a {
         /*height: 100% !important;*/
         margin-bottom: 0 !important;
         outline: none !important;
-        width: 100% !important
-        margin-left: 10px;
+        width: 100% !important;
+        margin-left: 10px
     }
 
     .header-top .search-web .form-web-header input::placeholder {
