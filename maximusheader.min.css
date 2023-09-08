@@ -786,7 +786,7 @@ a {
     .header-top .search-web .form-web-header input {
         border: none !important;
         color: #5f7d95;
-        /*height: 100% !important;*/
+        height: 100% !important;
         margin-bottom: 0 !important;
         outline: none !important;
         width: 100% !important;
