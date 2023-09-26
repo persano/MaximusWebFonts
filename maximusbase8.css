@@ -1126,7 +1126,7 @@ select.form-control:focus::-ms-value {
 }
 
 .alert-warning {
-    background-color: #fff3cd;
+    /*background-color: #fff3cd;*/
     border-color: #ffeeba;
     color: #856404
 }
