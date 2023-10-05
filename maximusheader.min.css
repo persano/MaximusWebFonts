@@ -41,7 +41,9 @@ body {
 
 header {
     align-items: center;
-    background-color: #0e0f0f;
+    /*background-color: #0e0f0f; OLD*/
+    background-color: #0e0f0fc7;
+    backdrop-filter: blur(12px);
     box-shadow: 1px 2px 11px -2px rgba(0, 0, 0, .84);
     -webkit-box-shadow: 1px 2px 11px -2px rgba(0, 0, 0, .84);
     -moz-box-shadow: 1px 2px 11px -2px rgba(0, 0, 0, .84);
@@ -76,7 +78,8 @@ a {
 }
 
 .links {
-    background-color: #000;
+    /*background-color: #000; OLD*/
+    background-color: #0000;
     height: 10px;
     width: 100%;
     z-index: 100;
@@ -894,7 +897,8 @@ a {
     }
 
     .header-bottom p {
-        color: #374957;
+        /*color: #374957; OLD*/
+        color: #fff;
         margin-bottom: 0 !important;
         margin-top: 0 !important;
     }
@@ -924,7 +928,8 @@ a {
     }
 
     .hamburger-menu-web span {
-        background-color: #08192b;
+        /*background-color: #08192b; OLD*/
+        background-color: #fff;
         border-radius: 5px;
         height: 3px;
         width: 100%
