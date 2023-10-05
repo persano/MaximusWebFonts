@@ -881,6 +881,7 @@ a {
     .header-bottom {
         /*background: #fff; OLD*/
         background: #ffffff3d;
+        backdrop-filter: blur(12px);
         border-top: .5px solid #4a4a4a;
         color: #fff;
         height: 40px;
