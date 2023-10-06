@@ -884,7 +884,7 @@ a {
     .header-bottom {
         /*background: #fff; OLD*/
         background: linear-gradient(0deg, rgba(255,255,255,0.5763306005996149) 5%, rgba(102,102,102,1) 47%);
-        border-top: .5px solid #4a4a4a;
+        /*border-top: .5px solid #4a4a4a;*/
         color: #fff;
         height: 40px;
         position: relative;
