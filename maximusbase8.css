@@ -2543,12 +2543,12 @@ div.product img {
     text-decoration: none
 }
 
-.image,
+/* .image,
 .item.list-view .image,
 .product,
 div.quickview {
     text-align: center
-}
+} */
 
 .product .image {
     box-sizing: border-box;
