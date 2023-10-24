@@ -2502,7 +2502,7 @@ div.product img {
     box-sizing: border-box;
     height: 100% !important;
     padding-bottom: 10px;
-    padding-top: 4px;
+    /*padding-top: 4px;*/
     transition: all .3s ease 0;
     -moz-transition: all .3s ease 0;
     -webkit-transition: all .3s ease 0;
