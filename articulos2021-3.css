@@ -44,7 +44,7 @@ div.button-pager li a:hover {
 }
 
 .price {
-    display: block;
+    display: inline-block;
     line-height: 1
 }
 
