@@ -139,7 +139,7 @@ div.button-pager li a:hover {
 
 @media screen and (min-width:769px) and (max-width:800px) {
     .price {
-        font-size: 22px
+        font-size: 17px
     }
 
     .description {
@@ -150,7 +150,7 @@ div.button-pager li a:hover {
 
 @media screen and (min-width:850px) and (max-width:1000px) {
     .price {
-        font-size: 24px
+        font-size: 17px
     }
 
     .description {
@@ -518,7 +518,7 @@ img.img-responsive {
 
 @media (max-width:768px) {
     .price {
-        font-size: 22px !important
+        font-size: 17px !important
     }
 }
 
