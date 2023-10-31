@@ -4577,12 +4577,6 @@ fieldset {
     content: "\f291"
 }
 
-.fa-icon {
-    font-size: inherit;
-    padding: 0;
-    color: #fff;
-}
-
 @media (max-width:480px) {
     .rowfooter {
         display: inherit;

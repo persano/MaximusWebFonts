@@ -201,9 +201,9 @@ a {
     margin-right: 10px
 }
 
-.fa-search {
+/*.fa-search {
     color: #374957
-}
+}*/
 
 .carrito .fa-caret-down {
     margin-left: 5px
@@ -829,11 +829,11 @@ a {
         cursor: pointer
     }
 
-    .fa-search {
+    /*.fa-search {
         font-size: 1.5em;
         padding: 12px
     }
-
+    */
     .carrito-drop-mobile {
         align-items: center;
         background-color: #061321;
