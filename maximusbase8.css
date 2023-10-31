@@ -1132,6 +1132,12 @@ select.form-control:focus::-ms-value {
     color: #856404
 }
 
+.alert-danger {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
 .close {
     color: #000;
     float: right;
@@ -4571,6 +4577,12 @@ fieldset {
     content: "\f291"
 }
 
+.fa-icon {
+    font-size: inherit;
+    padding: 0;
+    color: #fff;
+}
+
 @media (max-width:480px) {
     .rowfooter {
         display: inherit;
@@ -5024,4 +5036,23 @@ img.img-responsive {
     bottom: 0;
     z-index: 9999;
     mix-blend-mode: normal !important;
+}
+
+.input-group-append {
+    margin-left: -1px;
+}
+.input-group-append, .input-group-prepend {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.input-group>.input-group-append>.btn, .input-group>.input-group-append>.input-group-text, .input-group>.input-group-prepend:first-child>.btn:not(:first-child), .input-group>.input-group-prepend:first-child>.input-group-text:not(:first-child), .input-group>.input-group-prepend:not(:first-child)>.btn, .input-group>.input-group-prepend:not(:first-child)>.input-group-text {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.input-group-append .btn, .input-group-prepend .btn {
+    position: relative;
+    z-index: 2;
 }
