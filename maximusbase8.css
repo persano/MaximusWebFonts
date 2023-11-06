@@ -5050,3 +5050,7 @@ img.img-responsive {
     position: relative;
     z-index: 2;
 }
+
+.w-100 {
+    width: 100%;
+}
