@@ -41,8 +41,8 @@ body {
 
 header {
     align-items: center;
-    /*background-color: #0e0f0f; OLD*/
-    background-color: #0e0f0fc7;
+    background-color: #0e0f0f; 
+   /* background-color: #0e0f0fc7;*/
     box-shadow: 1px 2px 11px -2px rgba(0, 0, 0, .84);
     -webkit-box-shadow: 1px 2px 11px -2px rgba(0, 0, 0, .84);
     -moz-box-shadow: 1px 2px 11px -2px rgba(0, 0, 0, .84);
@@ -77,8 +77,8 @@ a {
 }
 
 .links {
-    /*background-color: #000; OLD*/
-    background-color: #0000;
+    background-color: #000; 
+    /*background-color: #0000;*/
     height: 10px;
     width: 100%;
     z-index: 100;
@@ -210,8 +210,8 @@ a {
 }
 
 .search-mobile {
-    /*background-color: #08192b !important; OLD*/
-    background-color: #0e0f0fc7 !important;
+    /*background-color: #08192b !important;*/
+    background-color: #0e0f0f !important;
     backdrop-filter: blur(3px);
     display: block !important;
     height: 100% !important;
@@ -423,8 +423,8 @@ a {
 }
 
 .menu-categorias {
-    /*height: 100%; OLD*/
-    height: 100vh;
+    height: 100%; 
+   /* height: 100vh;*/
     overflow-y: scroll;
     padding-bottom: 1rem;
     width: 100%
@@ -688,8 +688,8 @@ a {
 
     .links {
         align-items: center;
-        /*background-color: #000; OLD*/
-        background-color: #0000;
+        background-color: #000; 
+        /*background-color: #0000;*/
         display: flex;
         flex-direction: row;
         height: 30px;
@@ -883,9 +883,9 @@ a {
     }
 
     .header-bottom {
-        /*background: #fff; OLD*/
-        background: linear-gradient(0deg, rgba(255,255,255,0.5763306005996149) 5%, rgba(102,102,102,1) 47%);
-        /*border-top: .5px solid #4a4a4a;*/
+        background: #fff; 
+       /* background: linear-gradient(0deg, rgba(255,255,255,0.5763306005996149) 5%, rgba(102,102,102,1) 47%);*/
+        border-top: .5px solid #4a4a4a;
         color: #fff;
         height: 40px;
         position: relative;
@@ -906,8 +906,8 @@ a {
     }
 
     .header-bottom p {
-        /*color: #374957; OLD*/
-        color: #fff;
+        color: #374957; 
+       /* color: #fff;*/
         margin-bottom: 0 !important;
         margin-top: 0 !important;
     }
@@ -937,8 +937,8 @@ a {
     }
 
     .hamburger-menu-web span {
-        /*background-color: #08192b; OLD*/
-        background-color: #fff;
+       background-color: #08192b;
+       /*  background-color: #fff;*/
         border-radius: 5px;
         height: 3px;
         width: 100%
@@ -1028,7 +1028,7 @@ a {
         left: -100%;
         min-width: 224px;
         position: absolute;
-        top: 126px; /*OLD 130px*/
+        top: 130px; /* 126px*/
         transform: translateX(-500%);
         transition: .3s ease-in-out;
         z-index: 3

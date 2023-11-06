@@ -2562,7 +2562,8 @@ div.quickview {
     height: auto !important;
     margin: 0 auto;
     overflow: hidden;
-    width: 90%
+    width: 90%;
+    padding-top: 1em;
 }
 
 div.quickview {
@@ -5050,7 +5051,10 @@ img.img-responsive {
     position: relative;
     z-index: 2;
 }
+<<<<<<< HEAD
 
 .w-100 {
     width: 100%;
 }
+=======
+>>>>>>> 93fd10f76cf1914aced15f6b2be07c030a009b9b
