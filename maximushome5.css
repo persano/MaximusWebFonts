@@ -1352,7 +1352,7 @@ section#novedades_preventa div.owl-carousel .col-md-prod {
 }
 
 .price {
-    display: block;
+    display: inline-block;
     font-weight: 600
 }
 
