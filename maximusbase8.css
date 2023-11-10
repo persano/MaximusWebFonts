@@ -5055,3 +5055,11 @@ img.img-responsive {
 .w-100 {
     width: 100%;
 }
+
+  .art-discount {
+	display: inline-block;
+	color: #08BC08;
+  	vertical-align: text-bottom;
+	white-space: nowrap;
+	font-size: 14px;
+  }
