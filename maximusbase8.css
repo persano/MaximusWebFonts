@@ -2563,7 +2563,7 @@ div.quickview {
     margin: 0 auto;
     overflow: hidden;
     width: 90%;
-    padding-top: 1em;
+    /*padding-top: 1em;*/
 }
 
 div.quickview {
