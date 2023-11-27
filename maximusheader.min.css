@@ -1302,7 +1302,7 @@ _:-webkit-any(x):-webkit-full-screen {
     }
 
     .opacidad-menu {
-        top: 127px /*0*/
+        top: 0
     }
 }
 
@@ -1364,7 +1364,8 @@ button {
     position: fixed;
     transition: .9s ease-in-out;
     width: 100vw;
-    z-index: 95
+    z-index: 95;
+    top: 127px
 }
 
 @media only screen and (max-width:330px) {
