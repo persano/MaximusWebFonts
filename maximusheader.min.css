@@ -1028,7 +1028,7 @@ a {
         left: -100%;
         min-width: 224px;
         position: absolute;
-        top: 130px; /* 126px*/
+        top: 110px; /* 130px*/
         transform: translateX(-500%);
         transition: .3s ease-in-out;
         z-index: 3
@@ -1302,7 +1302,7 @@ _:-webkit-any(x):-webkit-full-screen {
     }
 
     .opacidad-menu {
-        top: 0
+        top: 127px /*0*/
     }
 }
 
