@@ -1006,13 +1006,13 @@ a {
     }
 
     .sidebar-menu-web {
-        background-color: #061321;
+        background-color: #0e0f0f;
         display: block;
         height: 100vh;
         left: -100%;
-        min-width: 330px;
+        min-width: 224px; /*224*/
         position: absolute;
-        top: 170px;
+        top: 110px;
         transform: translateX(-500%);
         transition: .3s ease-in-out;
         z-index: 3
@@ -1076,7 +1076,7 @@ a {
     }
 
     .cats-secundarias-sidebar {
-        background-color: #061321;
+        background-color: #0e0f0f;
         border-left: .5px solid var(--maximus-green);
         height: 100%;
         left: 100%;
@@ -1285,7 +1285,7 @@ _:-webkit-any(x):-webkit-full-screen {
     }
 
     .opacidad-menu {
-        top: 0
+        top: 110px /*0*/
     }
 }
 
