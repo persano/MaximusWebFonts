@@ -427,7 +427,8 @@ a {
    /* height: 100vh;*/
     overflow-y: scroll;
     padding-bottom: 1rem;
-    width: 100%
+    width: 70%; /*100*/
+    margin-right: 9rem
 }
 
 .categorias {
@@ -508,7 +509,8 @@ a {
     top: 101%;
     transform: translateX(-100%);
     transition: .3s ease-in-out;
-    width: 100%;
+    width: 70%; /*100*/
+    margin-right: 9rem;
     z-index: 1000
 }
 
