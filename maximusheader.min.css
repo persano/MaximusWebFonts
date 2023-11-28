@@ -363,7 +363,7 @@ a {
     background-color: #0e0f0f;
     position: fixed;
     top: 120px;
-    transform: translateX(-100%);
+    transform: translateX(-200%); /*100*/
     transition: .3s ease-in-out;
     z-index: 99
 }
@@ -438,7 +438,7 @@ a {
     overflow-y: scroll;
     position: absolute;
     top: 101%;
-    transform: translateX(-100%);
+    transform: translateX(-200%); /*100*/
     transition: .3s ease-in-out;
     width: 70%; /*100*/
     margin-right: 9rem;
