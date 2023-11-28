@@ -427,22 +427,9 @@ a {
    /* height: 100vh;*/
     overflow-y: scroll;
     padding-bottom: 1rem;
-    width: 100%; /*100*/
+    width: 70%; /*100*/
     margin-right: 9rem
-}
-.sub-menu-categorias-slide {
-    background-color: #061321;
-    height: 80vh;
-    margin: auto;
-    overflow-y: scroll;
-    position: absolute;
-    top: 101%;
-    transform: translateX(-100%); /*100*/
-    transition: .3s ease-in-out;
-    width: 100%; /*100*/
-    margin-right: 9rem;
-    z-index: 1000
-}    
+}   
 }
 
 .categorias {
@@ -514,6 +501,19 @@ a {
     margin-bottom: 1rem
 }
 /*ACA VA .sub-menu-categorias-slide*/
+.sub-menu-categorias-slide {
+    background-color: #061321;
+    height: 80vh;
+    margin: auto;
+    overflow-y: scroll;
+    position: absolute;
+    top: 101%;
+    transform: translateX(-100%); /*100*/
+    transition: .3s ease-in-out;
+    width: 70%; /*100*/
+    margin-right: 9rem;
+    z-index: 1000
+} 
 
 .slide-back-menu-left {
     align-items: center;
