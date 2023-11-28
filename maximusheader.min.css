@@ -508,7 +508,7 @@ a {
     overflow-y: scroll;
     position: absolute;
     top: 101%;
-    transform: translateX(-100%); /*100*/
+    transform: translateX(-200%); /*100*/
     transition: .3s ease-in-out;
     width: 70%; /*100*/
     margin-right: 9rem;
