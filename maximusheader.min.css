@@ -691,7 +691,7 @@ a {
 
     .links {
         align-items: center;
-        background: linear-gradient(90deg, rgb(16, 0, 42) 0%, rgb(60, 0, 128) 45%, rgb(109, 109, 255) 100%); 
+        background: #ef2542;
         display: flex;
         flex-direction: row;
         height: 30px;
