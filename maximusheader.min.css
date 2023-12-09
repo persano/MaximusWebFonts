@@ -77,7 +77,7 @@ a {
 }
 
 .links {
-    background: #ef2542; 
+    background: #1a5e3c; 
     height: 10px;
     width: 100%;
     z-index: 100;
@@ -623,7 +623,7 @@ a {
     .links {
         align-items: center;
         /*background-color: #fff;*/
-        background: #ef2542;
+        background: #1a5e3c;
         display: flex;
         flex-direction: row;
         height: 30px;
@@ -691,7 +691,7 @@ a {
 
     .links {
         align-items: center;
-        background: #ef2542;
+        background: #1a5e3c;
         display: flex;
         flex-direction: row;
         height: 30px;
