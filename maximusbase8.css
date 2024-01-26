@@ -4874,9 +4874,9 @@ p {
     position: sticky
 }
 
-section.slice.bg-3.animate-hover-slide-3 {
+/*section.slice.bg-3.animate-hover-slide-3 {
     padding: 30px
-}
+}*/
 
 @media (max-width:800px) {
     #maquinasarmadas.col-md-3.col-xs-6 {
