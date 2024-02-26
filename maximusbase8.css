@@ -5063,3 +5063,7 @@ img.img-responsive {
 	white-space: nowrap;
 	font-size: 14px;
   }
+
+  .art-discount small {
+	vertical-align: super;
+  }
