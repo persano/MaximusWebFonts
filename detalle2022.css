@@ -705,7 +705,7 @@ textarea:focus {
     box-sizing: border-box;
     color: #01f603;
     float: right;
-    font-size: xx-small;
+    font-size: medium;
     font-variant: sub;
     font-weight: 500;
     margin-left: auto;
