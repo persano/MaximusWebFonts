@@ -58,7 +58,7 @@ header {
 }
 
 .filler-header {
-    height: 5.5em;
+    height: 5.5rem;
     width: 100%;
     z-index: 0
 }
@@ -674,7 +674,7 @@ a {
 
 @media (min-width:769px) {
     .filler-header {
-        height: 5.5em
+        height: 5.5rem
     }
 
     header {
