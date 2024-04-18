@@ -2203,7 +2203,7 @@ div.quickview a {
     font-size: 16px;
     height: 40px !important;
     left: auto;
-    letter-spacing: 1px;
+    /*letter-spacing: 1px;*/
     max-height: 40px;
     min-width: 100px;
     opacity: 0;
@@ -2981,7 +2981,7 @@ h1.botonfiltrar a {
 .modal h5.modal-title {
     color: #000;
     font: 700 16px open sans, sans-serif !important;
-    letter-spacing: normal;
+    /*letter-spacing: normal;*/
     padding: 8px;
     text-align: center;
     width: 100%
@@ -5005,7 +5005,7 @@ ul {
     text-rendering: geometricPrecision !important;
     font-family: Source Sans Pro, -apple-system, BlinkMacSystemFont, Segoe UI, Arial, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji, sans-serif !important;
     font-style: normal !important;
-    letter-spacing: .5px !important
+    /*letter-spacing: .5px !important*/
 }
 
 .nav-link span {
