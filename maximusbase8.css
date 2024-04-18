@@ -1998,7 +1998,7 @@ span.navbar-toggler-icon {
     .price {
         color: #59d802;
         font-size: 17px !important; /*20px*/
-        padding: 10px 0
+        /*padding: 10px 0*/
     }
 }
 
@@ -2608,7 +2608,7 @@ img.img-responsive {
 .price {
     color: #00e602;
     font-size: 17px; /*20*/
-    padding: 10px 0
+   /* padding: 10px 0*/
 }
 
 .btn.btn-compra {
