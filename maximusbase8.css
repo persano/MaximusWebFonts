@@ -1997,7 +1997,7 @@ span.navbar-toggler-icon {
 
     .price {
         color: #59d802;
-        font-size: 17px !important; /*20px*/
+        font-size: 30px !important; /*17px*/
         /*padding: 10px 0*/
     }
 }
@@ -2607,7 +2607,7 @@ img.img-responsive {
 
 .price {
     color: #00e602;
-    font-size: 17px; /*20*/
+    font-size: 30px; /*17*/
    /* padding: 10px 0*/
 }
 
@@ -2722,7 +2722,7 @@ h1.prod-titulo {
 }
 
 #relacionados .price {
-    font-size: 17px;
+    font-size: 30px;
     font-weight: 700;
     padding: 5px
 }
