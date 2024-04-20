@@ -139,7 +139,7 @@ div.button-pager li a:hover {
 
 @media screen and (min-width:769px) and (max-width:800px) {
     .price {
-        font-size: 22px /*17px*/
+        font-size: 20px /*17px*/
     }
 
     .description {
