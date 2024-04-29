@@ -48,7 +48,7 @@ header {
     -moz-box-shadow: 1px 2px 11px -2px rgba(0, 0, 0, .84);
     display: flex;
     flex-direction: column;
-    height: 120px;
+    height: 108px; /*120*/
     justify-content: space-between;
     margin: 0 auto;
     position: fixed;
@@ -211,7 +211,6 @@ a {
 .search-mobile {
     /*background-color: #08192b !important;*/
     background-color: #0e0f0f !important;
-    backdrop-filter: blur(3px);
     display: block !important;
     height: 100% !important;
     left: 0 !important;
@@ -677,9 +676,6 @@ a {
         height: 5.5rem
     }
 
-    header {
-      backdrop-filter: blur(12px);  
-    }
     
     .search-mobile {
         display: none
