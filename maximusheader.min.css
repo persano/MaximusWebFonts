@@ -360,7 +360,7 @@ a {
 .menu-categorias {
     background-color: #0e0f0f;
     position: fixed;
-    top: 114px; /*120*/
+    top: 108px; /*120*/
     transform: translateX(-600%); /*100*/
     transition: .3s ease-in-out;
     z-index: 99
@@ -1363,7 +1363,7 @@ button {
     transition: .9s ease-in-out;
     width: 100vw;
     z-index: 95;
-    top: 127px
+    top: 120px
 }
 
 @media only screen and (max-width:330px) {
