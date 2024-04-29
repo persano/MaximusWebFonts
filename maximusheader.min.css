@@ -360,7 +360,7 @@ a {
 .menu-categorias {
     background-color: #0e0f0f;
     position: fixed;
-    top: 120px;
+    top: 114px; /*120*/
     transform: translateX(-600%); /*100*/
     transition: .3s ease-in-out;
     z-index: 99
@@ -505,7 +505,7 @@ a {
     margin: auto;
     overflow-y: scroll;
     position: absolute;
-    top: 101%;
+    top: 100%;
     transform: translateX(-200%); /*100*/
     transition: .3s ease-in-out;
     width: 70%; /*100*/
