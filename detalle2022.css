@@ -10,7 +10,7 @@ h5 {
 }
 #detalle .btn.btn-compra.btn-compra2 {
     background: #01f603;
-    border-radius: 8px;
+    border-radius: 6px;
     color: #000;
 }
 #detalle .btn.btn-compra:hover {
@@ -411,7 +411,7 @@ fieldset a {
     outline: none;
     padding: 0.5em;
     width: 200px;
-    border-radius: 8px;
+    border-radius: 6px;
 }
 
 #detalle .btn.btn-compra2 {
