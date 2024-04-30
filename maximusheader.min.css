@@ -843,7 +843,7 @@ a {
         justify-content: space-between;
         margin: auto;
         position: absolute;
-        top: 128px;
+        top: 120px;
         transform: translateX(1000%);
         transition: .3s ease-in-out;
         width: 30%
