@@ -334,8 +334,18 @@ a {
     width: 95%
 }
 
+/*
 .carrito-drop-mobile h3 {
     color: var(--maximus-green)
+}
+*/
+.su-pedido-title {
+    color: var(--maximus-green);
+    font-size: 120%;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: .5rem;
+    margin-top: 0;
 }
 
 .carrito-drop-mobile p {
@@ -521,10 +531,19 @@ a {
     width: 100%
 }
 
+/*
 .slide-back-menu-left h4 {
     color: #fff;
     font-size: 1.5rem;
     margin-bottom: 0 !important
+}
+*/
+
+.slide-back-menu-left-title {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.1;
 }
 
 .sub-menu-categorias-slide-active {
