@@ -340,7 +340,7 @@ small {
     flex-wrap: wrap;
     margin-left: -15px;
     margin-right: -15px;
-    justify-content: center;
+    /*justify-content: center;*/
 }
 
 .col-1,
