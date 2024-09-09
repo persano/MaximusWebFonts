@@ -119,7 +119,7 @@
 
 .owl-carousel .owl-stage {
     position: relative;
-    touch-action: manipulation
+    touch-action: pan-x /*manipulation*/
 }
 
 .owl-carousel .owl-stage:after {
