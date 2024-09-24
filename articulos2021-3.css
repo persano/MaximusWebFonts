@@ -399,9 +399,9 @@ div#articulos.container {
         text-align: center
     }
 
-    .dropdown.dropart button {
+    /*.dropdown.dropart button {
         width: 100%
-    }
+    }*/
 }
 
 #abrirpanelcarrito.dropdown-toggle:after {
