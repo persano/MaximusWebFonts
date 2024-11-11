@@ -4,41 +4,33 @@
     margin: 0;
     padding: 0
 } */
-
 :root {
     --maximus-green: #01f603
 }
-
 body {
     position: relative
 }
-
 .none {
     display: none;
     height: 0;
     transition: .3s ease-in-out;
     width: 0
 }
-
 .block {
     display: block
 }
-
 .flex {
     display: flex
 }
-
 .unscrollable {
     position: fixed;
     width: 100%
 }
-
 .fa-minus,
 .fa-plus {
     cursor: pointer;
     transition: 1s ease-in-out
 }
-
 header {
     align-items: center;
     background-color: #0e0f0f; 
@@ -687,8 +679,8 @@ a {
 }
 
 @media (min-width:769px) {
-    .filler-header {
-        height: 5.5rem
+    header {
+        height: 108px;
     }
 
     
