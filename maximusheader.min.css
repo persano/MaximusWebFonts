@@ -44,23 +44,17 @@ header {
     background-color: #0e0f0f; 
    /* background-color: #0e0f0fc7;*/
     box-shadow: 1px 2px 11px -2px rgba(0, 0, 0, .84);
-    -webkit-box-shadow: 1px 2px 11px -2px rgba(0, 0, 0, .84);
+    -webkit-box-shadow: 0px 1px 10px -3px rgba(0, 0, 0, .84);
     -moz-box-shadow: 1px 2px 11px -2px rgba(0, 0, 0, .84);
     display: flex;
     flex-direction: column;
-    height: 108px; /*120*/
+    height: 141px;
     justify-content: space-between;
     margin: 0 auto;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 99
-}
-
-.filler-header {
-    height: 5.5rem;
-    width: 100%;
-    z-index: 0
 }
 
 ul {
@@ -101,8 +95,7 @@ a {
     flex-direction: row;
     height: 100%;
     justify-content: space-between;
-    margin-bottom: 5px;
-    padding: 1rem 0;
+    padding: 0.5rem 0;
     width: 100%;
     z-index: 99;
 }
@@ -384,11 +377,13 @@ a {
 .categorias {
     margin: 0;
     width: 100%
+    agregar padding-left: 1rem;
 }
 
 .categorias li {
     margin-bottom: 10px;
     width: 100%
+    
 }
 
 .menu-categorias i,
@@ -420,14 +415,14 @@ a {
 
 .cruz-active {
     display: block;
-    width: 15%
+    width: 15%;
 }
 
 .hamburger-inactive {
     display: none;
     margin-left: -10px;
     margin-right: -2rem;
-    width: 0
+    width: 0;
 }
 
 .menu-categorias {
@@ -436,7 +431,7 @@ a {
     overflow-y: scroll;
     padding-bottom: 1rem;
     width: 70%; /*100*/
-    margin-right: 9rem
+    margin-right: 9rem;
 }   
 
 
@@ -444,22 +439,22 @@ a {
     display: flex;
     flex-direction: column;
     margin: 20px auto;
-    width: 85%
+    width: 85%;
 }
 
 .menu-productos-dropdown {
-    width: 100%
+    width: 100%;
 }
 
 .categoria {
     color: #fff;
     margin-bottom: 3rem;
-    margin-top: .5rem
+    margin-top: .5rem;
 }
 
 .categoria a,
 .notebooks-link {
-    color: #fff
+    color: #fff;
 }
 
 .dropdown-name-buttons {
@@ -467,7 +462,8 @@ a {
     cursor: pointer;
     display: flex;
     flex-direction: row;
-    justify-content: space-between
+    justify-content: space-between;
+    margin: 4px 0;
 }
 
 .drop {
@@ -783,7 +779,7 @@ a {
     }
 
     .search-web {
-        display: block;
+        display: flex;
         margin: auto;
         position: relative;
         width: 40%
@@ -796,8 +792,7 @@ a {
         border-radius: 6px;
         display: flex;
         justify-content: space-between;
-        margin: -4px auto auto auto;;
-        padding: 0px 0px;
+        margin: auto;
         width: 65%
     }
 
@@ -839,19 +834,13 @@ a {
     .search-web button {
         background-color: #08BC08;
         border: none;
-        border-radius: 6px
+        border-radius: 0 5px 5px 0 !important;;
     }
 
     .search-web button:hover {
         cursor: pointer
     }
 
-    /*
-    .fa-search {
-        font-size: 1.5em;
-        padding: 12px
-    }
-    */
     .carrito-drop-mobile {
         align-items: center;
         background-color: #061321;
@@ -895,14 +884,8 @@ a {
         top: 3%
     }
 
-    header {
-        /*height: 170px*/
-    }
-
     .header-bottom {
         background: #fff; 
-       /* background: linear-gradient(0deg, rgba(255,255,255,0.5763306005996149) 5%, rgba(102,102,102,1) 47%);*/
-        border-top: .5px solid #4a4a4a;
         color: #fff;
         height: 40px;
         position: relative;
@@ -1045,7 +1028,7 @@ a {
         left: -100%;
         min-width: 224px;
         position: absolute;
-        top: 110px; /* 130px*/
+        top: 141px; /* 130px*/
         transform: translateX(-500%);
         transition: .3s ease-in-out;
         z-index: 3
@@ -1265,7 +1248,7 @@ a {
 .svgheadertop {
     height: 17px;
     margin-bottom: auto;
-    margin-right: 3px;
+    margin-right: 5px;
     margin-top: auto;
     width: 17px
 }
