@@ -25,35 +25,22 @@ label,li,p,select,span,textarea,ul {font-weight: 400}
         text-shadow: none !important
     }
 
-    a,
-    a:visited {
-        text-decoration: underline
-    }
+    a, a:visited {text-decoration: underline}
+    img,tr {page-break-inside: avoid}
 
-    img,
-    tr {
-        page-break-inside: avoid
-    }
-
-    h2,
-    h3,
-    p {
+    h2,h3,p {
         orphans: 3;
         widows: 3
     }
 
-    h2,
-    h3 {
-        page-break-after: avoid
-    }
-
+    h2,h3 {page-break-after: avoid}
     .navbar {display: none}
 }
 
 html {
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
-    -ms-overflow-style: scrollbar;
+    overflow: scroll;
     -webkit-tap-highlight-color: transparent;
     box-sizing: border-box;
     font-family: sans-serif;
@@ -111,9 +98,7 @@ a:not([href]):not([tabindex]):hover {
     text-decoration: none
 }
 
-a:not([href]):not([tabindex]):focus {
-    outline: 0
-}
+a:not([href]):not([tabindex]):focus {outline: 0}
 
 img {
     border-style: none;
@@ -122,13 +107,7 @@ img {
 
 svg:not(:root) {overflow: hidden}
 
-[role=button],
-a,
-button,
-input,
-label,
-select,
-textarea {
+[role=button], a, button, input, label, select, textarea {
     touch-action: manipulation
 }
 
@@ -145,25 +124,15 @@ button:focus {
     outline: 5px auto -webkit-focus-ring-color
 }
 
-button,
-input,
-select,
-textarea {
+button, input, select, textarea {
     font-family: inherit;
     font-size: inherit;
     line-height: inherit;
     margin: 0
 }
 
-button,
-input {
-    overflow: visible
-}
-
-button,
-select {
-    text-transform: none
-}
+button, input {overflow: visible}
+button, select {text-transform: none}
 
 [type=submit],
 button,
@@ -196,11 +165,7 @@ textarea {
 
 [hidden] {display: none !important}
 
-h1,
-h2,
-h3,
-h4,
-h5 {
+h1, h2, h3, h4, h5 {
     color: inherit;
     font-family: inherit;
     font-weight: 500;
@@ -236,7 +201,6 @@ small {
 
 .normal-cont {
     max-width: 1420px;
-    margin: 0 auto;
 }
 
 .row {
@@ -244,17 +208,14 @@ small {
     flex-wrap: wrap;
     margin-left: -15px;
     margin-right: -15px;
-    /*justify-content: center;*/
 }
 
 .col-1,.col-4,.col-lg-6,.col-lg-12,.col-md-1,.col-md-2,.col-md-3,
 .col-md-4,.col-md-5,.col-md-6,.col-md-7,.col-md-8,.col-md-9,.col-md-10,.col-md-12,
-.col-sm-4,.col-sm-6,
-.col-sm-8 {
+.col-sm-4,.col-sm-6, .col-sm-8 {
     min-height: 1px;
     padding-left: 10px;
     padding-right: 10px;
-    /*padding-bottom: 15px;*/
     padding-bottom: 0;
     position: relative;
     width: 100%
@@ -341,10 +302,7 @@ select.form-control:focus::-ms-value {
     white-space: nowrap
 }
 
-.btn:focus,
-.btn:hover {
-    text-decoration: none
-}
+.btn:focus, .btn:hover {text-decoration: none}
 
 .btn:focus {
     box-shadow: 0 0 0 3px rgba(0, 123, 255, .25);
@@ -352,7 +310,6 @@ select.form-control:focus::-ms-value {
 }
 
 .btn:disabled {opacity: .65}
-
 .btn:active {background-image: none}
 
 .btn-primary {
@@ -596,15 +553,12 @@ select.form-control:focus::-ms-value {
     z-index: 3
 }
 
-.input-group-addon,
-.input-group-btn,
-.input-group .form-control {
+.input-group-addon, .input-group-btn, .input-group .form-control {
     align-items: center;
     display: flex
 }
 
-.input-group-addon,
-.input-group-btn {
+.input-group-addon, .input-group-btn {
     vertical-align: middle;
     white-space: nowrap
 }
@@ -787,8 +741,6 @@ select.form-control:focus::-ms-value {
     width: 1.5em
 }
 
-
-
 .card {
     word-wrap: break-word;
     background-clip: border-box;
@@ -887,10 +839,7 @@ button.close {
     padding: 0
 }
 
-.modal,
-.modal-open {
-    overflow: hidden
-}
+.modal, .modal-open {overflow: hidden}
 
 .modal {
     bottom: 0;
@@ -944,13 +893,8 @@ button.close {
     z-index: 7
 }
 
-.modal-backdrop.fade {
-    opacity: 0
-}
-
-.modal-backdrop.show {
-    opacity: .5
-}
+.modal-backdrop.fade {opacity: 0}
+.modal-backdrop.show {opacity: 0.5}
 
 .modal-header {
     -ms-flex-align: center;
@@ -983,32 +927,17 @@ button.close {
     padding: 15px
 }
 
-.modal-footer>:not(:first-child) {
-    margin-left: .25rem
-}
-
-.modal-footer>:not(:last-child) {
-    margin-right: .25rem
-}
-
-
-
-.mr-auto {
-    margin-right: auto !important
-}
+.modal-footer>:not(:first-child) {margin-left: .25rem}
+.modal-footer>:not(:last-child) {margin-right: .25rem}
+.mr-auto {margin-right: auto !important}
 
 .my-0 {
     margin-top: 0 !important;
     margin-bottom: 0 !important;
 }
 
-.ml-0 {
-    margin-left: 0 !important;
-}
-
-.mr-0 {
-    margin-right: 0 !important;
-}
+.ml-0 {margin-left: 0 !important;}
+.mr-0 {margin-right: 0 !important;}
 
 .navbar-nav.sm-collapsible .sub-arrow {
     border: 1px solid rgba(0, 0, 0, .1);
@@ -1025,24 +954,12 @@ button.close {
     width: 2em
 }
 
-.navbar-nav.sm-collapsible .sub-arrow:before {
-    content: "+"
-}
+.navbar-nav.sm-collapsible .sub-arrow:before {content: "+"}
+.navbar-nav.sm-collapsible .show>a>.sub-arrow:before {content: "-"}
+.navbar-dark .navbar-nav.sm-collapsible .nav-link .sub-arrow {border-color: rgba(255, 255, 255, .1)}
+.navbar-nav.sm-collapsible .has-submenu {padding-right: 3em}
 
-.navbar-nav.sm-collapsible .show>a>.sub-arrow:before {
-    content: "-"
-}
-
-.navbar-dark .navbar-nav.sm-collapsible .nav-link .sub-arrow {
-    border-color: rgba(255, 255, 255, .1)
-}
-
-.navbar-nav.sm-collapsible .has-submenu {
-    padding-right: 3em
-}
-
-.navbar-nav.sm-collapsible .dropdown-item,
-.navbar-nav.sm-collapsible .nav-link {
+.navbar-nav.sm-collapsible .dropdown-item, .navbar-nav.sm-collapsible .nav-link {
     position: relative
 }
 
@@ -1118,20 +1035,10 @@ button.close {
     white-space: normal
 }
 
-.navbar-nav:not(.sm-collapsible) .sm-nowrap>li>.dropdown-item {
-    white-space: nowrap
-}
-
-html {
-    overflow-x: hidden
-}
-
-a:hover {
-    color: #88dc42
-}
-
+.navbar-nav:not(.sm-collapsible) .sm-nowrap>li>.dropdown-item {white-space: nowrap}
+html {overflow-x: hidden}
+a:hover {color: #88dc42}
 body,h1,h2,h3,h4,h5,h6 { font-family: open sans, sans-serif}
-
 footer,footer a:hover {color: #fff}
 
 footer div.infopie {
@@ -1150,23 +1057,18 @@ footer .redes {margin-top: 15px}
 footer .redes a:hover {text-decoration: none}
 footer div.infopie .redes i {font-size: 24px}
 
-.search,
-.social-share,
-ul.social-share li {
+.search, .social-share, ul.social-share li {
     display: inline-block
 }
 
 .aparece,.social {text-align: right}
 
-.form-control:focus,
-.search_box {
+.form-control:focus, .search_box {
     box-shadow: none;
     outline: 0
 }
 
-.title-sol span,
-.widget h5,
-h4.tit_categorias {
+.title-sol span, .widget h5, h4.tit_categorias {
     text-transform: uppercase
 }
 
@@ -1217,9 +1119,7 @@ h4.tit_categorias {
     z-index: 2
 }
 
-.title-sol span {
-    display: inline-block
-}
+.title-sol span {display: inline-block}
 
 body {
     background: #f6f6f6;
@@ -1231,7 +1131,6 @@ body {
 }
 
 b,strong {font-weight: 700}
-
 .btn { cursor: pointer}
 
 .btn-compra,
@@ -1253,23 +1152,13 @@ header {
     position: relative
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
     color: #000;
     font-weight: 600
 }
 
-h1 {
-    font-size: 250%
-}
-
-h2 {
-    font-size: 180%
-}
+h1 {font-size: 250%}
+h2 {font-size: 180%}
 
 .controls .fa,
 .form-control,
@@ -1279,19 +1168,14 @@ h2#pie_seo b {
 }
 
 h3 {
-    color: #000;
     font-size: 120%;
     font-weight: 400;
     line-height: 24px
 }
 
-h4 {
-    font-size: 100%
-}
+h4 {font-size: 100%}
 
-h5 {
-    font-size: 115%
-}
+h5 {font-size: 115%}
 
 h1.tit-gral {
     font: 700 20px open sans, sans-serif
@@ -1308,9 +1192,7 @@ h1.titulos {
     padding: 8px
 }
 
-h1.titulos i {
-    color: #59d802
-}
+h1.titulos i {color: #59d802}
 
 input[type=email],
 input[type=number],
@@ -1333,10 +1215,7 @@ a {
     padding-bottom: 30px
 }
 
-.search,
-.search i {
-    color: #222
-}
+.search,.search i {color: #222}
 
 .search {
     left: 50%;
@@ -1375,8 +1254,6 @@ button.btn-buscartop {
     margin-left: -35px !important;
     margin-top: 5px
 }
-
-
 
 span.carritotop {
     color: #fff !important
@@ -1441,8 +1318,6 @@ div.container.micuenta {
 div#barrahormiga {
     margin-left: auto
 }
-
-
 
 .navbar-nav.nav {
     color: #000;
@@ -1510,9 +1385,7 @@ div.ingresotop {
     padding: 5px 20px
 }
 
-.dropdown-menu>li>a:hover {
-    color: #ddd
-}
+.dropdown-menu>li>a:hover {color: #ddd}
 
 .nav .open>a,
 .nav .open>a:focus,
@@ -1527,13 +1400,8 @@ div.ingresotop {
     top: -3px
 }
 
-.dropdown-menu #nombre_usuario {
-    color: #fff
-}
-
-ul.dropdown-menu li {
-    position: relative
-}
+.dropdown-menu #nombre_usuario {color: #fff}
+ul.dropdown-menu li {position: relative}
 
 div.social.pull-right .dropdown-menu li {
     border-bottom: 1px dotted #fff;
@@ -1552,9 +1420,7 @@ div#barrahormiga {
     margin-top: 15px
 }
 
-div#barrahormiga i {
-    color: #66fb00
-}
+div#barrahormiga i {color: #66fb00}
 
 div#barrahormiga a {
     color: #fff;
@@ -1568,9 +1434,7 @@ div#barrahormiga select {
     padding: 4px
 }
 
-div#barrahormiga div.col-md-8 {
-    padding-top: 5px
-}
+div#barrahormiga div.col-md-8 {padding-top: 5px}
 
 .breadcrumb {
     background-color: #fafafa;
@@ -1693,26 +1557,21 @@ div.product:hover div.quickview a.btn-quickview {
     visibility: visible
 }
 
-
 .cajaprod>.btn-quickview:hover {
     opacity: .95
 }
 
-.text-center {
-    text-align: center !important
-}
-
-.text-right {
-    text-align: right !important
-}
+.text-center {text-align: center !important}
+.text-right {text-align: right !important}
 
 footer {
-    text-align: center
+    text-align: center;
+    background: #222;
+    margin-top: 40px
 }
 
-footer a {
-    color: #ddd
-}
+footer a {color: #ddd}
+ul#menutop li {float: left}
 
 .top-bar {
     background: #555;
@@ -1722,10 +1581,6 @@ footer a {
 .top-bar,
 .top-bar a {
     color: #f0f0f0
-}
-
-ul#menutop li {
-    float: left
 }
 
 ul#menutop li a {
@@ -1864,10 +1719,6 @@ i.formatoico {
     text-align: right
 }
 
-footer {
-    background: #222;
-    margin-top: 20px
-}
 
 #parallax {
     background: url(imagenes/fondoparallax2.jpg) 50% 0 no-repeat fixed;
@@ -2074,18 +1925,9 @@ h1.prod-titulo {
     padding: 5px
 }
 
-#relacionados .product h4 {
-    margin-bottom: 0
-}
-
-div.dcorta,
-div.dlarga {
-    margin: 15px 0
-}
-
-div.dlarga b {
-    font-weight: 700
-}
+#relacionados .product h4 {margin-bottom: 0}
+div.dcorta,div.dlarga {margin: 15px 0}
+div.dlarga b {font-weight: 700}
 
 div.filtros_left h3,
 li.menuLatTit {
@@ -2095,9 +1937,7 @@ li.menuLatTit {
     padding: 5px
 }
 
-li.menuLatTit {
-    margin-bottom: 10px !important
-}
+li.menuLatTit {margin-bottom: 10px !important}
 
 i.borrarcate,
 i.borrarmarca,
@@ -2145,9 +1985,7 @@ li.menuLatTit {
     font: 700 14px open sans, sans-serif
 }
 
-ul.term-list {
-    padding-left: 20px
-}
+ul.term-list {padding-left: 20px}
 
 span.cf {
     background: #000;
@@ -2198,9 +2036,7 @@ div.filacarrito {
     padding: 20px
 }
 
-div.todocarrito {
-    padding: 15px
-}
+div.todocarrito {padding: 15px}
 
 i.carritoeliminar span {
     font-family: open sans, sans-serif
@@ -2348,9 +2184,7 @@ div.padding {
     padding: 8px
 }
 
-.padding8 {
-    padding: 8px
-}
+.padding8 {padding: 8px}
 
 div.img-item {
     text-align: center
@@ -2395,9 +2229,7 @@ button.btn.btn-buscartop i {
     font-weight: 700
 }
 
-.owl-next {
-    float: right
-}
+.owl-next {float: right}
 
 div.detalle_noticia img {
     max-width: 100%
@@ -2422,9 +2254,7 @@ div.armarpc-seleccionados div.col-md-armarpc {
     width: 20%
 }
 
-#redessh {
-    margin-top: 25px
-}
+#redessh {margin-top: 25px}
 
 #recomendar2 {
     background: #f90;
@@ -2439,9 +2269,7 @@ div.armarpc-seleccionados div.col-md-armarpc {
     top: -10px
 }
 
-#recomendar2 i {
-    color: #fff
-}
+#recomendar2 i {color: #fff}
 
 div.redestop .fa-facebook-square {
     color: #069
@@ -2547,9 +2375,7 @@ div.modal-content div.search div.input-group input.search-form {
     color: #fff
 }
 
-ul.op {
-    list-style: none
-}
+ul.op {list-style: none}
 
 p.subtit {
     color: #c61624;
@@ -2620,13 +2446,9 @@ ul#menu-build.dropdown-menu {
     width: 250px !important
 }
 
-ul#menu-build a {
-    color: #fff
-}
+ul#menu-build a {color: #fff}
 
-ul#menu-build a:hover {
-    color: #000
-}
+ul#menu-build a:hover {color: #000}
 
 a.nav-link:hover,
 li.nav-item:hover>a,
@@ -2969,23 +2791,13 @@ fieldset {
 }
 
 @-webkit-keyframes a {
-    0% {
-        transform: rotate(0deg)
-    }
-
-    to {
-        transform: rotate(359deg)
-    }
+    0% {transform: rotate(0deg)}
+    to {transform: rotate(359deg)}
 }
 
 @keyframes a {
-    0% {
-        transform: rotate(0deg)
-    }
-
-    to {
-        transform: rotate(359deg)
-    }
+    0% {transform: rotate(0deg)}
+    to {transform: rotate(359deg)}
 }
 
 .fa-search:before {content: "\f002"}
@@ -3102,9 +2914,8 @@ p, select, span, textarea, ul{
     mix-blend-mode: normal !important;
 }
 
-.input-group-append {
-    margin-left: -1px;
-}
+.input-group-append {margin-left: -1px;}
+
 .input-group-append, .input-group-prepend {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3131,9 +2942,7 @@ p, select, span, textarea, ul{
 	font-size: 12px;
 }
 
-.art-discount small {
-	vertical-align: super;
-}
+.art-discount small {vertical-align: super;}
 
 @media (min-width:576px) {
     .container {max-width: 540px}
@@ -3249,8 +3058,6 @@ p, select, span, textarea, ul{
         transition-duration: 0s;
         width: 1220px
     }
-
-    footer {margin-top: 40px !important}
 }
 
 @media (min-width:992px) {
@@ -3293,6 +3100,7 @@ p, select, span, textarea, ul{
 
 @media (min-width:1200px) {
     .container {max-width: 1140px}
+    footer {height: 861px;}
 }
 
 @media (max-width:991px) {
@@ -3392,7 +3200,9 @@ p, select, span, textarea, ul{
 }
 
 @media (max-width:460px) {
-    div.quickview {margin-top: 25%}
+    div.quickview {margin-top: 25%;}
+    .mid-cont {max-width: 320px;}
+    footer {min-height: 1044px;}
 }
 
 @media (max-width:400px) {
@@ -3470,15 +3280,10 @@ p, select, span, textarea, ul{
     }
 
     div#sponsors-top a:hover {color: #59d802}
-
     ul.dropdown-menu {width: 100% !important}
-
     ul#menu-productos {margin-left: 0 !important;}
-
     ul#menu-perifericos {left: 0 !important;}
-
-    .xs-hidden,
-    sm-hidden {display: none !important}
+    .xs-hidden, sm-hidden {display: none !important}
 
     #articulos .col-md-prod,
     .col-md-prod {
@@ -3664,10 +3469,6 @@ p, select, span, textarea, ul{
 
     .container.maximustv {margin-top: 30px !important}
 
-    footer {
-        margin-top: 30px !important;
-    }
-
     #slides_ofertas.slider.slider2 {display: none}
     #content-desktop {display: none}
     #content-mobile {display: block}
@@ -3774,13 +3575,8 @@ p, select, span, textarea, ul{
         margin-top: 15px
     }
 
-    div#sponsors-top img {
-        width: 20%
-    }
-
-    .navbar-brand {
-        padding-left: revert
-    }
+    div#sponsors-top img {width: 20%}
+    .navbar-brand {padding-left: revert}
 
     .navbar .navbar-brand img {
         margin-bottom: 0;
@@ -3813,9 +3609,7 @@ p, select, span, textarea, ul{
         margin-bottom: 0 !important
     }
 
-    ul.logos-tarjetas li {
-        width: 25%
-    }
+    ul.logos-tarjetas li { width: 25%}
 
     a.verpromos,
     span.icono p {
@@ -3826,22 +3620,15 @@ p, select, span, textarea, ul{
         padding: 0
     }
 
-    span.icono span {
-        display: block
-    }
+    span.icono span {display: block}
 
     span.icono {
         margin-bottom: 0 !important;
         margin-top: 0 !important
     }
 
-    div.bajoslider {
-        padding: 0 5px !important
-    }
-
-    span.ws {
-        display: none
-    }
+    div.bajoslider {padding: 0 5px !important}
+    span.ws {display: none}
 
     .no-js .owl-carousel,
     .owl-carousel.owl-loaded {
@@ -3861,18 +3648,14 @@ p, select, span, textarea, ul{
         font-size: 23px
     }
 
-    div.redestop {
-        display: none
-    }
+    div.redestop {display: none}
 
     header .container.header {
         padding: 0;
         width: 100%
     }
 
-    .navbar {
-        padding: 0
-    }
+    .navbar {padding: 0}
 
     ul.nav.navbar-nav {
         background: #ccc;
@@ -3881,9 +3664,7 @@ p, select, span, textarea, ul{
         width: 100%
     }
 
-    div.cabcarrito {
-        display: none
-    }
+    div.cabcarrito {display: none}
 
     #detalle .btn.btn-compra {
         background: #252329;
@@ -3908,17 +3689,9 @@ p, select, span, textarea, ul{
         width: 100%
     }
 
-    .barraformato {
-        text-align: left
-    }
-
-    div.barraformato {
-        display: none
-    }
-
-    section.spots img {
-        margin: 5px 0
-    }
+    .barraformato {text-align: left}
+    div.barraformato {display: none}
+    section.spots img {margin: 5px 0}
 
     section#novedades_home .col-md-prod,
     section#ofertas_home .col-md-prod {
@@ -3999,13 +3772,9 @@ p, select, span, textarea, ul{
 }
 
 @media (min-width:768px) and (max-width:1024px) and (orientation:portrait) {
-    #content-desktop {
-        display: block
-    }
+    #content-desktop {display: block}
 
-    #content-mobile {
-        display: none
-    }
+    #content-mobile {display: none}
 }
 
 @media (max-width:1920px) and (min-width:1441px) {
@@ -4015,31 +3784,20 @@ p, select, span, textarea, ul{
 }
 
 @media screen and (max-width:375px) {
-    .title-sol.style2 {
-        font-size: 23px
-    }
+    .title-sol.style2 {font-size: 23px}
 }
 
 @media (min-width:500px) and (orientation:landscape) {
-    #content-desktop.container.maximustv {
-        display: block
-    }
+    #content-desktop.container.maximustv {display: block}
 
-    #content-mobile.container.maximustv {
-        display: none
-    }
+    #content-mobile.container.maximustv {display: none}
 
-    .row.bajoslide .col-md-4 {
-        margin: 5px auto
-    }
+    .row.bajoslide .col-md-4 {margin: 5px auto}
 }
 
 @media (max-width:768px) and (orientation:landscape) {
 
-    p,
-    span.icono {
-        margin-top: 0 !important
-    }
+    p, span.icono { margin-top: 0 !important}
 }
 
 @media (max-width:4096px) {
@@ -4081,9 +3839,7 @@ p, select, span, textarea, ul{
 }
 
 @media (max-width:1140px) {
-    div.spotify {
-        top: 45%
-    }
+    div.spotify {top: 45%}
 
     div.spotify,
     div.whatsapp {
